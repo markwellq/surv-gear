@@ -6,7 +6,7 @@
     <title>Layout</title>
 
     @vite(['resources/css/app.css', 'resources/js/search.js'])
-
+    <script src="//unpkg.com/alpinejs" defer></script>
 
     @livewireStyles
 </head>

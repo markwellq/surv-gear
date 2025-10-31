@@ -20,3 +20,4 @@ composer require blade-ui-kit/blade-icons
 
 composer require codeat3/blade-carbon-icons - <x-carbon-user />
 composer require andreiio/blade-remix-icon - <x-ri-arrow-down-s-line />
+composer require codeat3/blade-bytesize-icons - <x-bytesize-menu />

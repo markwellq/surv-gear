@@ -1,0 +1,30 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: surv_gear_system
+    ports:
+      - "8080:80" # Apache http://localhost:8080
+      - "5173:5173" # Vite dev server for HMR
+    volumes:
+      - .:/var/www/html # Mount source code
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: surv_gear_system_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: surv_gear_db
+      MYSQL_USER: denis
+      MYSQL_PASSWORD: denis
+      MYSQL_ROOT_PASSWORD: 123
+    ports:
+      - "3322:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

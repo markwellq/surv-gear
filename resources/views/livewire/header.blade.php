@@ -1,7 +1,7 @@
 
 
 <header class="mx-auto container">
-        <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-32 lg:gap-64 xl:gap-102 p-3 border-b-[1px]">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-32 lg:gap-64 xl:gap-102 p-3 border-b-[0.1px]">
                 <h1 class="text-[12px] md:text-[14px] font-semibold select-none">Official Survival Gear Adventure Gear</h1>
                 <h1 class="text-[12px] md:text-[14px] font-semibold select-none">Free Shipping On All Orders</h1>
         </div>

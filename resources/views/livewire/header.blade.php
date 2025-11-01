@@ -10,7 +10,9 @@
                 <div class="flex flex-row gap-4">
                      <div class="flex ">
                         <button>
-                           <x-bytesize-menu class="w-6 h-6 cursor-pointer"/>
+                           {{-- <x-bytesize-menu class="w-6 h-6 cursor-pointer"/> --}}
+                           <img src="{{ asset('storage/images/compas.png') }}"  alt="compas"
+                                 class="w-6 h-6 md:w-8 md:h-8 cursor-pointer hover:scale-102 duration-100 border-[0.1px] p-1 rounded-md shadow-md">
                         </button>
                      </div>      
                      <div>

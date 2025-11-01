@@ -11,3 +11,18 @@
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
 }
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+:root {
+    --font-color-white: #ffffff;
+    --gray-color: #a6a6a6;
+    --font-color-black: #000000;
+    --button-color: #f7b829;
+}

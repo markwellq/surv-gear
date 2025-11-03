@@ -25,5 +25,8 @@ body {
     --gray-color: #a6a6a6;
     --font-color-black: #000000;
     --button-color: #f7b829;
+    --text-black: #000;
+    --text-white: #fff;
     --bg-black: #000;
+    --bg-white: #fff;
 }

@@ -30,7 +30,7 @@ composer require codeat3/blade-fontisto-icons <x-fontisto-discover />, <x-fontis
 
 <!-- old -->
 
-composer require andreiio/blade-remix-icon <x-ri-visa-line />
+composer require andreiio/blade-remix-icon  <x-ri-visa-line />
 composer require owenvoke/blade-fontawesome <x-fab-apple-pay />, <x-fab-google-pay />, <x-fab-cc-amazon-pay />
 composer require codeat3/blade-fontisto-icons <x-fontisto-paypal />
 composer require codeat3/blade-simple-icons <x-si-discover />

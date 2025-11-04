@@ -1,6 +1,6 @@
 @extends('layout')
 @section('main')
-    <div class="mx-auto container py-8">
+    <div class="mx-auto container py-8 mb-55">
         <div class="flex flex-col mx-auto items-center justify-center bg-white max-w-sm rounded-lg p-8 gap-8 shadow-lg">
 
             <div class="flex flex-row items-center gap-4 p-4">
@@ -10,7 +10,7 @@
                     <span class="font-bold text-[2]">&</span>
 
                   <img src="{{ asset('storage/images/compas.png') }}"  alt="compass"
-                     class="w-[90px] md:w-[35px] h-full cursor-pointer hover:scale-102 duration-100">
+                     class="w-[40px] md:w-[35px] h-full cursor-pointer hover:scale-102 duration-100">
             </div>
 
 
@@ -44,7 +44,6 @@
                         Register 
                     </a>
                 </div>
-                <span class="text-[14px] opacity-40">The password must contain at least 7 letters.</span>
             </form>
         </div>
     </div>

@@ -16,8 +16,13 @@ class GeneralController extends Controller
         return view("about");
     }
 
-    public function contacts()
+    public function contact()
     {
-        return view("contacts");
+        return view("contact");
+    }
+
+    public function aboutUs()
+    {
+        return view("aboutUs");
     }
 }

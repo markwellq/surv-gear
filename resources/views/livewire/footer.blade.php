@@ -18,10 +18,10 @@
                             <a href="/gear">Products</a>
                         </li>
                         <li>
-                            <a href="/gear">About Us</a>
+                            <a href="/aboutUs">About Us</a>
                         </li>
                         <li>
-                            <a href="/gear">Contact</a>
+                            <a href="/contact">Contact</a>
                         </li>
                         <li>
                             <a href="/account">Account</a>
@@ -110,7 +110,7 @@
         class="w-[400px]">
     </div>
 
-    <div class="absolute bottom-20 right-[-320px] opacity-50 z-30 hidden lg:flex">
+    <div class="absolute bottom-20 right-[-295px] opacity-50 z-[-1] hidden lg:flex">
         <img src="{{ asset('storage/images/backpack-shape.png') }}"  alt="backpack-tent"
         class="w-[350px]">
     </div>

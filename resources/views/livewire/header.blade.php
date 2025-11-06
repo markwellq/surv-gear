@@ -39,7 +39,7 @@
                           </a>
                        </li>
                        <li class="text-[12px] md:text-[16px]">
-                          <a href="#" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
+                          <a href="/contact" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
                                 Contact
                           </a>
                        </li>

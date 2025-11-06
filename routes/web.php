@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeneralController;
 
 Route::get("/", [GeneralController::class, "home"])->name("home");
+Route::get("/contact", [GeneralController::class, "contact"])->name("contact");
+Route::get("/aboutUs", [GeneralController::class, "aboutUs"])->name("aboutUs");
 
 
 Route::get("/login", [AuthController::class, "login"])->name("login");

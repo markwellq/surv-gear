@@ -5,12 +5,12 @@
 
             <div class="flex flex-row items-center gap-4 p-4">
                  <img src="{{ asset('storage/images/Logo-black.png') }}"  alt="suv-gear-logo"
-                    class="w-[90px] md:w-[80px] h-full cursor-pointer hover:scale-102 duration-100">
+                    class="w-[90px] md:w-20 h-full cursor-pointer hover:scale-102 duration-100">
 
                     <span class="font-bold text-[2]">&</span>
 
                   <img src="{{ asset('storage/images/compas.png') }}"  alt="compass"
-                     class="w-[40px] md:w-[35px] h-full cursor-pointer hover:scale-102 duration-100">
+                     class="w-10 md:w-[35px] h-full cursor-pointer hover:scale-102 duration-100">
             </div>
 
 

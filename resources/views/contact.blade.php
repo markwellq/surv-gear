@@ -21,9 +21,8 @@
                 </div>
             </div>
             
-            <div class="border-b-[1px] mb-5">
-                
-            </div>
+            <div class="border-b mb-5"></div>
+            
             <div class="flex flex-row gap-20">
                 <div class="flex flex-col gap-4">
                     <h2 class="font-semibold">General Enquires</h2>

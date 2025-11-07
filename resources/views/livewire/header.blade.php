@@ -1,16 +1,15 @@
 
 
-<header class="sticky top-0 bg-white/95 z-30 h-[145px] shadow-sm">
+<header x-data="{ open: false, openGear: false, openBackpack: false, openAccount: false }" class="sticky top-0 bg-white/95 z-30 h-[145px] shadow-sm">
         <div class="mx-auto container flex flex-col md:flex-row items-center justify-center gap-2 md:gap-32 lg:gap-64 xl:gap-102 p-2 border-b-[0.1px]">
              <h1 class="text-[12px] md:text-[14px] font-medium select-none">Official Survival Gear Adventure Gear</h1>
              <h1 class="text-[12px] md:text-[14px] font-medium select-none">Free Shipping On All Orders</h1>
         </div>
 
-        <div class="mx-auto container flex flex-row items-center p-4 justify-between text-(--font-color-black)">
+        <div x-data="{ open: false }" class="mx-auto container flex flex-row items-center p-4 justify-between text-(--font-color-black)">
                 <div class="flex flex-row gap-4">
-                     <div class="flex ">
-                        <button>
-                           {{-- <x-bytesize-menu class="w-6 h-6 cursor-pointer"/> --}}
+                     <div class="flex">
+                        <button @click="open = true">
                            <img src="{{ asset('storage/images/compas.png') }}"  alt="compas"
                                  class="w-6 h-6 md:w-8 md:h-8 cursor-pointer hover:scale-102 duration-100 border-[0.1px] p-1 rounded-md shadow-md">
                         </button>
@@ -24,41 +23,103 @@
                 </div>
 
                 <div>
-                   <ul class="hidden md:flex flex-row uppercase font-bold gap-10">
-                       <li class="text-[12px] md:text-[16px]">
-                               <a href="#" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
-                                Home
-                                </a>
-                       </li>
-                       <li class="text-[12px] md:text-[16px]">
-                          <a href="#" class="flex items-center gap-1">
-                                  <span class="flex items-center tracking-widest hover:text-(--gray-color) transition-colors duration-300">
-                                        Gear
-                                     <x-ri-arrow-down-s-line class="w-5 h-5 ml-1" />
-                                  </span>
-                          </a>
-                       </li>
-                       <li class="text-[12px] md:text-[16px]">
-                          <a href="/contact" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
-                                Contact
-                          </a>
-                       </li>
-                   </ul>
+                  <nav>
+
+                     <ul class="hidden md:flex flex-row uppercase font-bold gap-10">
+                        <li class="text-[12px] md:text-[16px]">
+                           <a href="#" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
+                              Home
+                           </a>
+                        </li>
+                        <li class="text-[12px] md:text-[16px]">
+                           <a click="openGear=true" href="#" class="flex items-center gap-1">
+                              <span @click="openGear = true" class="flex items-center tracking-widest hover:text-(--gray-color) transition-colors duration-300">
+                                 Gear
+                                 <x-ri-arrow-down-s-line class="w-5 h-5 ml-1" />
+                              </span>
+                           </a>
+                        </li>
+                        <li class="text-[12px] md:text-[16px]">
+                           <a href="/contact" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
+                              Contact
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
                 </div>
 
                 <div>
                    <ul class="flex flex-row gap-10">
                       <li>
-                         <a href="/">
+                        <button @click="openAccount=true">
                             <x-carbon-user class="w-8 h-8 cursor-pointer hover:scale-109 duration-300" />
-                         </a>
+                        </button>
                      </li>
                       <li>
-                         <button>
+                         <button @click="openBackpack=true">
                              <x-hugeicons-backpack-03 class="w-8 h-8 cursor-pointer hover:scale-109 duration-300" />
                          </button>
                      </li>
                    </ul>
+                </div>
+
+               <div x-show="openAccount" x-transition class="fixed inset-0">
+                  <div class="absolute inset-0 bg-black/50">
+                     <div class="absolute w-[300px] h-[250px] md:w-[400px] bg-(--nav-color) right-0 top-[145px] shadow-md">
+                        <div class="flex flex-col items-end gap-4 p-4">
+                           <button @click="openAccount=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2 flex">
+                              <x-bi-x class="w-10 h-10" />
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+
+                <div x-show="openBackpack" x-transition class="fixed inset-0">
+                  <div class="absolute inset-0 bg-black/50">
+                     <div class="absolute w-[300px] h-[850px] md:w-[400px] bg-(--nav-color) right-0 top-[145px] shadow-md">
+                        <div class="flex flex-col items-end gap-4 p-4">
+                           <button @click="openBackpack=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2">
+                              <x-bi-x class="w-10 h-10" />
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+
+                <div x-show="openGear" x-transition class="fixed inset-0">
+                     <p>Hello</p>
+                </div>
+
+                <div x-show="open" x-transition class="fixed inset-0">
+                  <div class="absolute inset-0 bg-black/50">
+                     <div class="absolute w-[300px] h-[850px] md:w-[400px] bg-(--nav-color) left-0 top-[145px] shadow-md">
+                       <div class="flex flex-col gap-4 p-4">
+                           <button @click="open=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2 flex justify-end">
+                              <x-bi-x class="w-10 h-10" />
+                           </button>
+                           <nav class="flex flex-col gap-4 text-(--text-white) text-[24px]">
+                              <ul class="flex flex-col gap-4 p-4">
+                                 <li>
+                                    <a href="/">Home</a>
+                                 </li>
+                                 <li>
+                                    <a href="/gear" class="flex flex-row gap-2 items-center">
+                                       Gear
+                                       <x-microns-right  class="w-4 h-4"/>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="/contact">Contact</a>
+                                 </li>
+                                    <li>
+                                    <a href="/aboutUs">About us</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                       </div>
+                     </div>
+                  </div>
                 </div>
         </div>
 </header>

@@ -4,7 +4,7 @@
         <div class="relative w-full  overflow-hidden h-[400px]">
             <div class="absolute w-full h-full top-0">
                 <img src="{{ asset('storage/images/crumb-1.webp') }}"  alt="crumb-1"
-                class="absolute top-0 left-0 w-full z-30">
+                class="absolute top-0 left-0 w-full z-29">
             </div>
 
             <div>

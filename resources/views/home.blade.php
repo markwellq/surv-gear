@@ -12,7 +12,7 @@
                 <h2 class="text-[16px] md:text-[28px] text-(--font-color-white) font-semibold select-none">Adventure & Survival Gear to Help You Get Outside</h2>
 
                 
-                 <a href="/gear" class="py-3 px-7 bg-(--button-color) hover:bg-white hover:text-black hover:font-bold rounded-lg select-none duration-100">
+                 <a href="/gear" class="py-3 px-7 bg-(--button-color) hover:bg-white hover:text-black font-bold rounded-lg select-none duration-100">
                       Shop All Gear
                   </a>
             </div>

@@ -19,6 +19,7 @@
         "codeat3/blade-forkawesome": "^1.11",
         "codeat3/blade-microns": "^1.6",
         "codeat3/blade-simple-icons": "^7.16",
+        "codeat3/blade-teeny-icons": "*",
         "davidhsianturi/blade-bootstrap-icons": "^2.1",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",

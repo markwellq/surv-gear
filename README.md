@@ -23,6 +23,7 @@ p&nbsp; - php artisan migrate
 &nbsp; - composer require codeat3/blade-bytesize-icons # <x-bytesize-menu />
 &nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-x />
 &nbsp; - composer require codeat3/blade-microns # <x-microns-right />
+&nbsp; - composer require codeat3/blade-teeny-icons # <x-tni-left-small-o />
 
 &nbsp; -PAYMENT ICONS--
 
@@ -40,3 +41,15 @@ p&nbsp; - php artisan migrate
 &nbsp; - composer require owenvoke/blade-entypo # <x-entypo-facebook />
 &nbsp; - composer require codeat3/blade-forkawesome # <x-forkawesome-twitter-square />
 &nbsp; - composer require andreiio/blade-remix-icon # <x-ri-instagram-fill />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+-DATABASE SQL-
+
+INSERT INTO categories (id, name, slug, created_at, updated_at)
+VALUES
+(1, 'Knives & Hatchets', 'knives-hatchets', NOW(), NOW()),
+(2, 'Sleep', 'sleep', NOW(), NOW()),
+(3, 'Packs', 'packs', NOW(), NOW()),
+(4, 'Tents', 'tents', NOW(), NOW()),
+(5, 'Fire & Survival', 'fire-survival', NOW(), NOW());

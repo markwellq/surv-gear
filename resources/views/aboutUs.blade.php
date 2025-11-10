@@ -47,13 +47,13 @@
                         <div class="flex flex-col gap-4 p-4">
                             <span class="font-bold">
                                 ► Functionality
-                            </span> 
+                            </span>
                             — every detail has a reason to exist.
                             <span class="font-bold">
                                 ► Durability 
                             </span class="font-bold">
                             — built to survive the elements, time, and wear.
-                            <span class="font-bold">
+                             <span class="font-bold">
                                 ► Authenticity
                             </span>
                             — because survival isn’t a trend, it’s a mindset.

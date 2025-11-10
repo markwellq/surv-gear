@@ -91,10 +91,10 @@
                         <div @click.away="openGear = false" class="absolute shadow-sm top-[150px] left-1/2 transform -translate-x-1/2 w-[400px] h-[170px] md:h-[50px] md:w-[550px] bg-(--bg-white) rounded-b-xl">
                            <div class="flex flex-row items-center justify-center gap-4">
                               <div>
-                                 <nav class="flex flex-col items-center justify-center md:flex-row gap-2 md:gap-4 mt-3">
+                                 <nav class="flex flex-col items-center justify-center md:flex-row gap-2 md:gap-6 mt-3">
                                     @foreach ($categories as $category)
                                     <li class="font-bold">
-                                       <a href="{{ route('show-category', $category->slug) }}" class="">
+                                       <a href="{{ route('show-category', $category->slug) }}" class="hover:border-b-[0.1px]">
                                           {{ $category->name }}
                                        </a>
                                     </li>
@@ -143,7 +143,7 @@
                                     <nav class="flex flex-col items-left justify-center gap-2 md:gap-4 mt-10 px-2">
                                        @foreach ($categories as $category)
                                        <li class="font-bold text-(--text-white)">
-                                          <a href="{{ route('show-category', $category->slug) }}" class="">
+                                          <a href="{{ route('show-category', $category->slug) }}" class="hover:border-b-[0.1px]">
                                              {{ $category->name }}
                                           </a>
                                        </li>

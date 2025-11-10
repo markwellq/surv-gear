@@ -23,6 +23,7 @@ p&nbsp; - php artisan migrate
 &nbsp; - composer require codeat3/blade-bytesize-icons # <x-bytesize-menu />
 &nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-x />
 &nbsp; - composer require codeat3/blade-microns # <x-microns-right />
+&nbsp; - composer require codeat3/blade-teeny-icons # <x-tni-left-small-o />
 
 &nbsp; -PAYMENT ICONS--
 

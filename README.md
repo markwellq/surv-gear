@@ -53,3 +53,22 @@ VALUES
 (3, 'Packs', 'packs', NOW(), NOW()),
 (4, 'Tents', 'tents', NOW(), NOW()),
 (5, 'Fire & Survival', 'fire-survival', NOW(), NOW());
+
+&nbsp;&nbsp;
+
+INSERT INTO products (category_id, name, description, short_desc, short_desc_2, price, image, second_image, created_at, updated_at)
+VALUES
+(1, 'Fixed Blade Knife', 'Conquer any terrain with this fearless fixed blade knife! The half-serrated edge and drop point blade offer versatile cutting power, while the textured rubber grip ensures a steady hold. Equipped with a sheath and belt loop for easy carrying. Built with full tang construction for maximum durability. Go boldly where others fear to venture!',
+'Total length: 9", Blade length 4.8"',
+'Includes sheath with belt loop',
+24.99, 'fixed-blade-knife.webp', '', NOW(), NOW()),
+
+(1, 'Utility Tool', 'Take risks and tackle any challenge with our Utility Tool! This compact multitool includes a knife blade, saw, pliers, screwdrivers, files, and can opener. Conveniently carry it with you using the included sheath and belt loop. Be bold, be prepared, and be ready for anything!',
+'Tools included: Knife Blade, Mini Saw, Needle Nose Pliers, Standard Pliers, Wire Cutters, Phillips Screwdriver, Large and Medium Flathead Screwdrivers, Two kinds of files, Can Opener',
+'Made of 2CR13 steel tools and a sturdy aluminum frame.',
+29.99, 'utility-tool.webp', 'utility-tool-info.webp', NOW(), NOW()),
+
+(3, 'Hiking Hydration 30L', 'The Bear Grylls 30L Hiking Backpack is built for rugged outdoor adventures. Featuring a 2L hydration bladder, durable design, and an included rain cover, it keeps you ready for any trail or weather. Lightweight yet tough, this backpack is perfect for hiking, camping, or travel.',
+'Includes 2L water bladder with tube, Rain Cover',
+'Weight (with bladder) 2.3 lbs',
+59.99, 'backpack-1.webp', 'backpack-1-info.webp', NOW(), NOW());

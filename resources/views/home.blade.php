@@ -16,6 +16,13 @@
                       Shop All Gear
                   </a>
             </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center p-2">
+            <h1>Products</h1>
+            <div>
+                @livewire('products')
+            </div>
             
         </div>
 

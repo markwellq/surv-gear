@@ -26,12 +26,12 @@
                   <nav>
                      <ul class="hidden md:flex flex-row uppercase font-bold gap-10">
                         <li class="text-[12px] md:text-[16px]">
-                           <a href="#" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
+                           <a href="/" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
                               Home
                            </a>
                         </li>
                         <li class="text-[12px] md:text-[16px]">
-                           <a click="openGear=true" href="#" class="flex items-center gap-1">
+                           <a click="openGear=true" class="flex items-center gap-1">
                               <span @click="openGear = true" class="flex items-center tracking-widest hover:text-(--gray-color) transition-colors duration-300">
                                  Gear
                                  <x-ri-arrow-down-s-line class="w-5 h-5 ml-1" />

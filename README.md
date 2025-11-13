@@ -24,6 +24,16 @@ p&nbsp; - php artisan migrate
 &nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-x />
 &nbsp; - composer require codeat3/blade-microns # <x-microns-right />
 &nbsp; - composer require codeat3/blade-teeny-icons # <x-tni-left-small-o />
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-shield-fill />
+&nbsp; - composer require owenvoke/blade-entypo # <x-entypo-compass />
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-lightning-charge-fill />
+&nbsp; - composer require andreiio/blade-remix-icon # <x-ri-tools-fill />
+&nbsp; - composer require secondnetwork/blade-tabler-icons # <x-tabler-tools />
+&nbsp; - composer require mallardduck/blade-boxicons # <x-bx-world />
+&nbsp; - composer require codeat3/blade-iconpark # <x-iconpark-tentbanner-o />
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-check />
+&nbsp; - composer require blade-ui-kit/blade-heroicons # <x-heroicon-o-plus />
+&nbsp; - composer require blade-ui-kit/blade-heroicons # <x-heroicon-o-minus />
 
 &nbsp; -PAYMENT ICONS--
 

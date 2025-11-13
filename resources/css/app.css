@@ -18,6 +18,10 @@
     list-style: none;
 }
 
+[x-cloak] {
+    display: none !important;
+}
+
 body {
     background-color: #e2e2e2;
 }
@@ -25,12 +29,27 @@ body {
 :root {
     --font-color-white: #ffffff;
     --gray-color: #a6a6a6;
+    --gray-color-2: #d2d2d2;
+    --gray-color-3: #e4e4e4;
     --nav-color: #424242;
     --nav-color-2: #2a2a2a;
     --font-color-black: #000000;
     --button-color: #f7b829;
+    --icon-color: #f7b829;
     --text-black: #000;
     --text-white: #fff;
     --bg-black: #000;
     --bg-white: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
 }

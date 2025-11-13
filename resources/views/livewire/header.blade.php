@@ -31,7 +31,7 @@
                            </a>
                         </li>
                         <li class="text-[12px] md:text-[16px]">
-                           <a click="openGear=true" class="flex items-center gap-1">
+                           <a click="openGear=true" class="flex items-center gap-1 cursor-pointer">
                               <span @click="openGear = true" class="flex items-center tracking-widest hover:text-(--gray-color) transition-colors duration-300">
                                  Gear
                                  <x-ri-arrow-down-s-line class="w-5 h-5 ml-1" />
@@ -39,8 +39,8 @@
                            </a>
                         </li>
                         <li class="text-[12px] md:text-[16px]">
-                           <a href="/contact" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
-                              Contact
+                           <a href="/aboutUs" class="tracking-widest hover:text-(--gray-color) transition-colors duration-300">
+                              About
                            </a>
                         </li>
                      </ul>
@@ -62,9 +62,9 @@
                    </ul>
                 </div>
 
-               <div x-show="openAccount" x-transition class="fixed inset-0">
+               <div x-show="openAccount" x-transition x-cloak class="fixed inset-0">
                   <div class="absolute inset-0 bg-black/50">
-                     <div  @click.away="openAccount = false" class="absolute w-[300px] h-[250px] md:w-[400px] bg-(--nav-color) right-0 top-[145px] shadow-md">
+                     <div @click.away="openAccount = false" class="absolute w-[300px] h-[250px] md:w-[400px] bg-(--nav-color) right-0 top-[145px] shadow-md">
                         <div class="flex flex-col items-end gap-4 p-4">
                            <button @click="openAccount=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2 flex">
                               <x-bi-x class="w-10 h-10" />
@@ -74,9 +74,9 @@
                   </div>
                 </div>
 
-                <div x-show="openBackpack" x-transition class="fixed inset-0">
+                <div x-show="openBackpack" x-transition x-cloak class="fixed inset-0">
                   <div class="absolute inset-0 bg-black/50">
-                     <div  @click.away="openBackpack = false" class="absolute w-[300px] h-full md:w-[400px] bg-(--nav-color) right-0 shadow-md">
+                     <div @click.away="openBackpack = false" class="absolute w-[300px] h-full md:w-[400px] bg-(--nav-color) right-0 shadow-md">
                         <div class="flex flex-col items-end gap-4 p-4">
                            <button @click="openBackpack=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2">
                               <x-bi-x class="w-10 h-10" />
@@ -86,7 +86,7 @@
                   </div>
                 </div>
 
-                <div x-show="openGear" x-transition class="fixed inset-0">
+                <div x-show="openGear" x-transition x-cloak class="fixed inset-0">
                      <div class="absolute inset-0">
                         <div @click.away="openGear = false" class="absolute shadow-sm top-[150px] left-1/2 transform -translate-x-1/2 w-[400px] h-[170px] md:h-[50px] md:w-[550px] bg-(--bg-white) rounded-b-xl">
                            <div class="flex flex-row items-center justify-center gap-4">
@@ -106,7 +106,7 @@
                      </div>
                 </div>
 
-                <div x-show="open, openGear" x-transition class="fixed inset-0">
+                <div x-show="open, openGear" x-transition x-cloak class="fixed inset-0">
                   <div class="absolute inset-0 bg-black/50">
                      <div @click.away="open = false" class="absolute w-[250px] h-full md:w-[400px] bg-(--nav-color) left-0 shadow-md">
                        <div class="flex flex-col gap-4 p-4">
@@ -133,7 +133,7 @@
                               </ul>
                            </nav>
 
-                           <div x-show="openGearNav">
+                           <div x-show="openGearNav" x-transition x-cloak>
                                  <div class="absolute w-[250px] h-full md:w-[300px] bg-(--nav-color-2) md:left-[400px] top-0 shadow-md p-2">
                                     <div class="mt-4">
                                        <button @click="openGearNav=false" class="w-8 h-8 cursor-pointer text-(--text-white) flex justify-end">

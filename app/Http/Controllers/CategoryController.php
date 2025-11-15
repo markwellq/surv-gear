@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     public function show($slug){
-        $category = Category::where('slug', $slug)-with('product')->firstOrFail();
+        $category = Category::where('slug', $slug)->with('products')->firstOrFail();
+        
         return view('category.show', ['category' => $category]);
     }
 }

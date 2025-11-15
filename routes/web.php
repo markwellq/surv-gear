@@ -11,7 +11,7 @@ Route::get("/contact", [GeneralController::class, "contact"])->name("contact");
 Route::get("/aboutUs", [GeneralController::class, "aboutUs"])->name("aboutUs");
 
 Route::get("/category/{slug}", [CategoryController::class, 'show'])->name("show-category");
-Route::get("/product/{name}", [ProductController::class, 'show'])->name("show-product");
+Route::get("/product/{slug}", [ProductController::class, 'show'])->name("show-product");
 
 Route::get("/login", [AuthController::class, "login"])->name("login");
 Route::get("/register", [AuthController::class, "register"])->name("register");

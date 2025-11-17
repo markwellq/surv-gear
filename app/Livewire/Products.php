@@ -8,9 +8,11 @@ use App\Models\Product;
 class Products extends Component
 {
     public $products;
+    public $total;
 
     public function mount(){
         $this -> products = Product::all();
+        $this -> total = Product::count();
     }
     public function render()
     {

@@ -18,12 +18,10 @@
             </div>
         </div>
 
-        <div class="flex flex-col items-center justify-center p-2">
-            <h1>Products</h1>
+        <div class="flex flex-col items-center justify-center p-2 bg-(--product-color)">
             <div>
                 @livewire('products')
             </div>
-            
         </div>
 
         <div class="flex flex-col items-center justify-center gap-6 p-4 py-20 bg-white">
@@ -50,17 +48,5 @@
                 </div>
             </div>
         </div>
-
-
-
-         {{-- <div class="flex flex-col items-center justify-center gap-8">
-            <img src="{{ asset('storage/images/about.png') }}"  alt="surv-about"
-            class="w-[900px] cursor-pointer hover:scale-101 duration-100">
-            <h2 class="text-[16px] md:text-[28px] font-semibold select-none">Adventure & Survival Gear to Help You Get Outside</h2>
-
-           <a href="/products" class="py-3 px-5 bg-(--button-color) rounded-lg select-none duration-100">
-                Shop All Gear
-            </a>
-        </div>  --}}
     </section>
 @endsection

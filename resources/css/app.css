@@ -40,6 +40,8 @@ body {
     --text-white: #fff;
     --bg-black: #000;
     --bg-white: #fff;
+    --product-color: #2b2b2b;
+    --product-color-2: #343434;
 }
 
 body::-webkit-scrollbar {

@@ -1,11 +1,44 @@
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    @foreach($products as $product)
+{{-- Homepage --}}
+<section class="mt-10 mb-10">
+    <div class="flex flex-col justify-center items-center mb-10">
+        <h3 class="text-[18px] md:text-[24px] lg:text-[28px] font-bold text-(--text-white)">SURV ALL GEAR</h3>
+        <p class="text-[14px] md:text-[16px] lg:text-[18px] text-(--text-white)">
+            {{ $total }} products
+        </p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 hover:translate-y-0.5 gap-15 sm:gap-10 p-4">
+        @foreach($products as $product)
         <a href="{{ route('show-product', $product->slug) }}">
-             <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="w-32 h-32 object-cover">
-             <p>{{ $product->name }}</p>
-             <p>{{ $product->price }}$</p>
-             <p>Homeproducts</p>
+            <div class="flex flex-col gap-3">
+                <div class="overflow-hidden">
+                    <div class="aspect-square object-cover h-full w-45 md:w-50 lg:w-64 xl:w-74 overflow-hidden">
+                        <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-full hover:scale-103 duration-300">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 py-2 px-4 bg-(--product-color-2)">
+                    <div class="flex flex-row gap-2">
+                        <div class="p-1 bg-(--bg-white) rounded-sm">
+                            <x-heroicon-s-star class="w-3 h-3 sm:w-4 sm:h-4"/>
+                        </div>
+                        <div class="p-1 bg-(--bg-white) rounded-sm">
+                            <x-heroicon-s-star class="w-3 h-3 sm:w-4 sm:h-4"/>
+                        </div>
+                        <div class="p-1 bg-(--bg-white) rounded-sm">
+                            <x-heroicon-s-star class="w-3 h-3 sm:w-4 sm:h-4"/>
+                        </div>
+                        <div class="p-1 bg-(--bg-white) rounded-sm">
+                            <x-heroicon-s-star class="w-3 h-3 sm:w-4 sm:h-4"/>
+                        </div>
+                        <div class="p-1 bg-(--bg-white) rounded-sm">
+                            <x-heroicon-s-star class="w-3 h-3 sm:w-4 sm:h-4"/>
+                        </div>
+                    </div>
+                    <h3 class="text-(--text-white) font-bold text-[14px] sm:text-[15px] lg:text-[18px]">{{ $product->name }}</h3>
+                    <p class="text-(--text-white)">{{ $product->price }}$</p>
+                </div>
+            </div>
         </a>
-
-    @endforeach
-</div>
+        
+        @endforeach
+    </div>
+</section>

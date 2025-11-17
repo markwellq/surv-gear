@@ -110,7 +110,7 @@
         class="w-[400px]">
     </div>
 
-    <div class="absolute bottom-20 right-[-275px] opacity-50 z-[-1] hidden lg:flex">
+    <div class="absolute bottom-20 right-[-275px] opacity-50 z-[-1] hidden xl:flex">
         <img src="{{ asset('storage/images/backpack-shape.png') }}"  alt="backpack-tent"
         class="w-[350px]">
     </div>

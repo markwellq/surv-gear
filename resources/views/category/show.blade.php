@@ -4,7 +4,7 @@
     <div class="mx-auto mb-10">
     <div class="flex flex-row items-center justify-between mt-10 mb-10 container mx-auto px-10">
         <div>
-            <p class="text-(--text-white)">Filter</p>
+            <p class="text-(--text-white)">Filters</p>
         </div>
         <div>
             <h1 class="text-(--text-white) text-[16px] md:text-[28px]">{{ $category->name }}</h1>

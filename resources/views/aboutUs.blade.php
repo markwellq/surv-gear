@@ -8,7 +8,7 @@
    <div>
     <div class="flex flex-col gap-5 justify-center items-start p-6 md:p-12 max-w-[900px] mx-auto mb-10 mt-10 mb:mt-0 md:mb-10">
         <h1 class="text-[28px] sm:text-[36px] md:text-[52px] lg:text-[74px] font-bold max-w-[90%] md:max-w-[800px]">Equipping explorers, forged for survival.</h1>
-        <p class="text-[16px] md:text-[18px] opacity-60 max-w-[700px]">We’re dedicated to crafting gear that inspires confidence, adapts to any challenge, and stands the test of time.</p>
+        <p class="text-[16px] md:text-[18px] opacity-60 max-w-[700px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor accusamus rerum sit laboriosam quas, unde vel et?</p>
         <a href="/contact" class="py-3 px-7 bg-(--button-color) hover:bg-white hover:text-black font-bold rounded-lg select-none duration-100">Contact</a>
         <p class="text-[12px] opacity-60">If you have questions or need any general information</p>
     </div>
@@ -50,15 +50,15 @@
     <div class="mx-auto flex flex-col xl:flex-row items-center xl:items-start justify-center gap-8 p-6 mb-30">
         <img src="{{ asset('storage/images/about.jpg') }}" alt="about-hero" class="w-[500px] md:w-[800px] object-cover brightness-75 opacity-80">
         <div class="flex flex-col gap-4 md:max-w-2xl xl:max-w-md">
-            <h2 class="text-[24px] md:text-[42px] font-bold">For those who chase horizons and embrace the unknown.</h2>
-            <p class="text-[18px]">Our mission is to craft gear that adapts, protects, and stands the test of time — supporting explorers in every journey, no matter where it leads.</p>
+            <h2 class="text-[24px] md:text-[42px] font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+            <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laudantium iure doloribus maiores. Optio voluptatem incidunt veniam quo fugit sit? Numquam, dicta maxime sit repellat quidem doloremque laboriosam praesentium et.</p>
         </div>
     </div>
 
     <div class="mb-30">
         <div class="flex flex-col text-center justify-center items-center gap-4 mt-20 mb-10">
             <h3 class="text-[28px] sm:text-[36px] md:text-[52px] lg:text-[74px] font-bold">Why choose us</h3>
-            <p class="text-[16px] md:text-[18px] opacity-60 max-w-[90%] md:max-w-[800px]">We build gear for those who refuse to give up — crafted to perform, adapt, and protect when the elements turn against you. Because survival isn’t luck — it’s preparation.</p>
+            <p class="text-[16px] md:text-[18px] opacity-60 max-w-[90%] md:max-w-[800px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quam, sit nihil vitae exercitationem beatae, quisquam neque assumenda placeat earum atque esse modi harum ad. Laborum iste rem architecto error!</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 container mx-auto p-4">
@@ -67,8 +67,8 @@
                     <x-bi-shield-fill class="w-8 h-8 text-(--icon-color)"/>
                 </span>
                 <div class="flex flex-col gap-2 mt-10">
-                    <h4 class="font-semibold">Built to Endure</h4>
-                    <p>Our gear is crafted from premium materials, rigorously tested to withstand the harshest conditions and last for years.</p>
+                    <h4 class="font-semibold">Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quod natus perspiciatis dolorem, sequi officia aliquid ipsam in!</p>
                 </div>
             </div>  
 
@@ -77,8 +77,8 @@
                     <x-entypo-compass class="w-8 h-8 text-(--icon-color)"/>
                 </span>
                 <div class="flex flex-col gap-2 mt-10">
-                    <h4 class="font-semibold">Designed for Exploration</h4>
-                    <p>Every product is thoughtfully engineered to help explorers adapt, navigate, and thrive in any environment.</p>
+                    <h4 class="font-semibold">Lorem, ipsum dolor.</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quas qui modi, voluptates commodi nihil pariatur eos libero.</p>
                 </div>
             </div>
 
@@ -87,8 +87,8 @@
                     <x-bi-lightning-charge-fill class="w-8 h-8 text-(--icon-color)"/>
                 </span>
                 <div class="flex flex-col gap-2 mt-10">
-                    <h4 class="font-semibold">Innovation in Action</h4>    
-                    <p>We combine cutting-edge technology with practical design, ensuring gear that performs when it matters most.</p>
+                    <h4 class="font-semibold">Lorem, ipsum dolor.</h4>    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quia nostrum exercitationem! Quia ut molestiae non accusantium recusandae tempore.</p>
                 </div>
             </div>
 
@@ -97,8 +97,8 @@
                     <x-ri-tools-fill class="w-8 h-8 text-(--icon-color)"/>
                 </span>
                 <div class="flex flex-col gap-2 mt-10">
-                    <h4 class="font-semibold">Trusted by Adventurers</h4>
-                    <p>Our equipment is relied on by explorers worldwide who demand durability, reliability, and performance in every journey.</p>
+                    <h4 class="font-semibold">Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere praesentium temporibus iusto, inventore hic labore eligendi exercitationem.</p>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
         <div class="flex flex-col gap-1 max-w-[600px]">
             <h4 class="font-bold text-[32px] md:text-[52px]">The most popular questions</h4>
             <span class="font-bold text-[32px] md:text-[52px]">We got you.</span>
-            <p class="text-[18px] mt-5">Curious about our gear? Check out our most common questions — quick answers to help you explore with confidence.</p>
+            <p class="text-[18px] mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit doloribus ipsam odio labore iste inventore aliquid? Rerum, enim!</p>
         </div> 
 
 
@@ -117,7 +117,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 class="text-[18px] md:text-[24px]" @click="openQuestion = true ">
-                            How long does delivery take?
+                            Lorem ipsum dolor sit amet.
                         </h4>
                     </div>
 
@@ -128,7 +128,7 @@
 
                 <div x-show="openQuestion" class="bg-(--gray-color-3)">
                     <p @click="openQuestion = false" class="mt-5 p-2">
-                        • Standard delivery usually takes 5–10 business days worldwide. Expedited shipping options are available at checkout.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam minima explicabo in repellat pariatur.
                     </p>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            Can I return or exchange a product?
+                            Lorem ipsum dolor sit amet.
                         </h4>
                     </div>
                     <div>
@@ -148,7 +148,7 @@
 
                 <div x-show="openQuestion" class="bg-(--gray-color-3)">
                     <p @click.away="openQuestion = false" class="mt-5 p-2">
-                         • Yes! We offer a 30-day return policy for unused items. Exchanges and refunds are handled quickly and easily.
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, facere veritatis vero beatae quos vitae!
                     </p>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            Are your products durable and water-resistant?
+                            Lorem ipsum dolor sit amet.
                         </h4>
                     </div>
 
@@ -168,7 +168,7 @@
 
                 <div x-show="openQuestion" class="bg-(--gray-color-3)">
                     <p @click="openQuestion = false" class="mt-5 p-2">
-                        • Absolutely. All gear is crafted from premium materials and rigorously tested to withstand extreme conditions.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem aspernatur cum libero odio enim.
                     </p>
                 </div>
             </div>
@@ -177,7 +177,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            How do I clean and maintain my gear?
+                            Lorem ipsum dolor sit amet.
                         </h4>
                     </div>
 
@@ -188,7 +188,7 @@
 
                 <div x-show="openQuestion" class="bg-(--gray-color-3)">
                     <p @click="openQuestion = false" class="mt-5 p-2">
-                        • Wipe down with a damp cloth for daily cleaning. For deeper cleaning, follow the care instructions included with each product.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis cupiditate in laudantium temporibus excepturi.
                     </p>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            Do you offer custom gear or engraving?
+                            Lorem ipsum dolor sit amet.
                         </h4>
 
                     </div>
@@ -209,7 +209,7 @@
 
                 <div x-show="openQuestion" class="bg-(--gray-color-3)">
                     <p @click="openQuestion = false" class="mt-5 p-2">
-                        • Yes, we provide custom options on select products. Contact our support team for details and pricing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis laudantium ipsam, fugit dolor dolore!
                     </p>
                 </div>
             </div>

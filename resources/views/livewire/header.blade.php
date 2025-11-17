@@ -106,7 +106,7 @@
                      </div>
                 </div>
 
-                <div x-show="open, openGear" x-transition x-cloak class="fixed inset-0">
+                <div x-show="open, openGear" x-cloak class="fixed inset-0">
                   <div class="absolute inset-0 bg-black/50">
                      <div @click.away="open = false" class="absolute w-[250px] h-full md:w-[400px] bg-(--nav-color) left-0 shadow-md">
                        <div class="flex flex-col gap-4 p-4">
@@ -133,7 +133,7 @@
                               </ul>
                            </nav>
 
-                           <div x-show="openGearNav" x-transition x-cloak>
+                           <div x-show="openGearNav" x-cloak>
                                  <div class="absolute w-[250px] h-full md:w-[300px] bg-(--nav-color-2) md:left-[400px] top-0 shadow-md p-2">
                                     <div class="mt-4">
                                        <button @click="openGearNav=false" class="w-8 h-8 cursor-pointer text-(--text-white) flex justify-end">

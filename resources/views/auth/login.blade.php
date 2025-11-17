@@ -24,14 +24,13 @@
                      <p class="text-red-400">{{$message}}</p>
                     @enderror
                 <input type="password" name="password" placeholder="Password" class="px-4 py-2 border rounded-sm">
-                @error('password')
-                <p class="text-red-400">{{$message}}</p>
-                @enderror 
+                    @error('password')
+                     <p class="text-red-400">{{$message}}</p>
+                      @enderror 
                 <input type="password" name="password_confirmation" placeholder="Confirm Password" class="px-4 py-2 border rounded-sm">
-                @error("password_confirmation")
-                <p class="text-red-400">{{ $message }}</p>
-                @enderror
-                
+                     @error("password_confirmation")
+                     <p class="text-red-400">{{ $message }}</p>
+                     @enderror
                 <button type="submit" class="font-semibold opacity-70 hover:opacity-100 hover:border-b-[0.1px]">
                     Login In
                 </button>

@@ -33,7 +33,11 @@ p&nbsp; - php artisan migrate
 &nbsp; - composer require codeat3/blade-iconpark # <x-iconpark-tentbanner-o />
 &nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-check />
 &nbsp; - composer require blade-ui-kit/blade-heroicons # <x-heroicon-o-plus />
-&nbsp; - composer require blade-ui-kit/blade-heroicons # <x-heroicon-o-minus />
+&nbsp; - composer require codeat3/blade-google-material-design-icons # <x-gmdi-local-shipping-r />
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons # <x-bi-box-fill />
+&nbsp; - composer require codeat3/blade-ant-design-icons # <x-antdesign-safety-certificate />
+&nbsp; - blade-ui-kit/blade-heroicons # <x-heroicon-o-minus />
+&nbsp; - blade-ui-kit/blade-heroicons # <x-heroicon-s-star />
 
 &nbsp; -PAYMENT ICONS--
 
@@ -66,19 +70,63 @@ VALUES
 
 &nbsp;&nbsp;
 
-INSERT INTO products (category_id, name, description, short_desc, short_desc_2, price, image, second_image, created_at, updated_at)
+INSERT INTO products (category_id, name, slug, description, short_desc, short_desc_2, price, image, second_image, created_at, updated_at)
 VALUES
-(1, 'Fixed Blade Knife', 'Conquer any terrain with this fearless fixed blade knife! The half-serrated edge and drop point blade offer versatile cutting power, while the textured rubber grip ensures a steady hold. Equipped with a sheath and belt loop for easy carrying. Built with full tang construction for maximum durability. Go boldly where others fear to venture!',
-'Total length: 9", Blade length 4.8"',
-'Includes sheath with belt loop',
-24.99, 'fixed-blade-knife.webp', '', NOW(), NOW()),
 
-(1, 'Utility Tool', 'Take risks and tackle any challenge with our Utility Tool! This compact multitool includes a knife blade, saw, pliers, screwdrivers, files, and can opener. Conveniently carry it with you using the included sheath and belt loop. Be bold, be prepared, and be ready for anything!',
-'Tools included: Knife Blade, Mini Saw, Needle Nose Pliers, Standard Pliers, Wire Cutters, Phillips Screwdriver, Large and Medium Flathead Screwdrivers, Two kinds of files, Can Opener',
-'Made of 2CR13 steel tools and a sturdy aluminum frame.',
-29.99, 'utility-tool.webp', 'utility-tool-info.webp', NOW(), NOW()),
+(1, 'Fixed Blade Knife', 'fixed-blade-knife' 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+24.99, 'images/knives-hatchets/fixed-blade-knife.webp', '', NOW(), NOW()),
+&nbsp;
 
-(3, 'Hiking Hydration 30L', 'The Bear Grylls 30L Hiking Backpack is built for rugged outdoor adventures. Featuring a 2L hydration bladder, durable design, and an included rain cover, it keeps you ready for any trail or weather. Lightweight yet tough, this backpack is perfect for hiking, camping, or travel.',
-'Includes 2L water bladder with tube, Rain Cover',
-'Weight (with bladder) 2.3 lbs',
-59.99, 'backpack-1.webp', 'backpack-1-info.webp', NOW(), NOW());
+(1, 'Utility Tool', 'utility-tool', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+29.99, 'images/knives-hatchets/utility-tool.webp', 'utility-tool-info.webp', NOW(), NOW()),
+&nbsp;
+
+(3, 'Hiking Hydration 30L', 'hiking-hydration-30L', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+59.99, 'images/backpacks/backpack-1.webp', 'backpack-1-info.webp', NOW(), NOW());
+&nbsp;
+
+(4, '1 Person Hiking tent', '1-person-hiking-tent', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+80, 'images/tents/1-person-hiking-tent.webp', '', NOW(), NOW());
+&nbsp;
+
+(1, 'Paracord Hatchet', 'paracord-hatchet', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+29.99, 'images/knives-hatchets/paracord-hatchet.webp', '', NOW(), NOW());
+&nbsp;
+
+(2, 'Sleeping Bag', 'sleeping-bag', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+89.99, 'images/sleep/sleeping-bag-15.webp', '', NOW(), NOW());
+&nbsp;
+
+(5, 'Micro Sparker', 'micro-sparker', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+89.99, 'images/survival/micro-sparker.webp', '', NOW(), NOW());
+&nbsp;
+
+(1, 'Axe Multitool Hammer', 'axe-multitool-hammer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+45, 'images/knives-hatchets/axe-multitool.webp', '', NOW(), NOW());
+&nbsp;
+
+(1, 'Folding Blade Knife', 'folding-blade-knife', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+24.99, 'images/knives-hatchets/folding-blade.webp', '', NOW(), NOW());
+&nbsp;
+
+(3, 'Hiking Hydration 45L', 'hydration-45', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur', 69.99, 'images/backpacks/backpack-2.webp', '', NOW(), NOW());

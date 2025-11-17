@@ -12,7 +12,15 @@
 
 &nbsp; - php artisan key:generate
 &nbsp; - php artisan storage:link
-p&nbsp; - php artisan migrate
+&nbsp; - php artisan migrate
+
+&nbsp; - Help commands &nbsp;
+&nbsp; php artisan route:list
+&nbsp; php artisan view:clear
+&nbsp; php artisan config:clear
+&nbsp; php artisan route:clear
+&nbsp; php artisan cache:clear
+&nbsp; php artisan storage:link
 
 &nbsp; &nbsp; &nbsp; -ICONS-
 

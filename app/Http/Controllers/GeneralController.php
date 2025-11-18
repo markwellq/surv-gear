@@ -10,10 +10,7 @@ class GeneralController extends Controller
 {
      public function home()
     {
-        // $products = Product::take(4)->get();
-
         return view("home");
-
     }
 
      public function about()

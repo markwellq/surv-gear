@@ -8,7 +8,19 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
-{
+
+{   
+    public function user()
+    {
+        $user = Auth::user();
+
+        if(!$user)
+        {
+            return redirect('/register');
+        }
+
+        return view ('profile', ['user' => $user]);
+    }
       public function login()
     {
         return view('auth.login');
@@ -36,7 +48,7 @@ class AuthController extends Controller
     public function loginPost(Request $req)
     {
         $data = $req->validate([
-            'email' => ['required', 'string', 'exist:users,email'],
+            'email' => ['required', 'string', 'exists:users,email'],
             'password' => ['required']
         ]);
 

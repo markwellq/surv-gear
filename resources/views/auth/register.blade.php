@@ -3,7 +3,7 @@
     <div class="mx-auto container py-8 mb-55">
         <div class="flex flex-col mx-auto items-center justify-center bg-white max-w-sm rounded-lg p-8 gap-8">
 
-            <div class="flex flex-row items-center gap-4 p-4">
+            {{-- <div class="flex flex-row items-center gap-4 p-4">
                  <img src="{{ asset('storage/images/Logo-black.png') }}"  alt="suv-gear-logo"
                     class="w-[90px] md:w-20 h-full cursor-pointer hover:scale-102 duration-100">
 
@@ -11,7 +11,7 @@
 
                   <img src="{{ asset('storage/images/compas.png') }}"  alt="compass"
                      class="w-10 md:w-[35px] h-full cursor-pointer hover:scale-102 duration-100">
-            </div>
+            </div> --}}
 
 
             <p class="text-[24px] font-bold">Register</p>

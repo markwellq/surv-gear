@@ -66,6 +66,24 @@
                   <div class="absolute inset-0 bg-black/50">
                      <div @click.away="openAccount = false" class="absolute w-[300px] h-[250px] md:w-[400px] bg-(--nav-color) right-0 top-[145px] shadow-md">
                         <div class="flex flex-col items-end gap-4 p-4">
+
+                           @guest
+                            <li>
+                                <a class="" href="{{route('login')}}">Login</a>
+                            </li>
+                            <li>
+                                <a class="" href="{{route('register')}}">Register</a>
+                            </li>
+                           @endguest
+
+                           @auth
+                             
+
+                              <p class="text-(--text-white)">Authed</p>
+
+                              <a href="/logout" class="text-(--text-white)">Logout</a>
+                           @endauth
+
                            <button @click="openAccount=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2 flex">
                               <x-bi-x class="w-10 h-10" />
                            </button>

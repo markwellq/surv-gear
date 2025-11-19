@@ -6,7 +6,7 @@
             {{ $total }} products
         </p>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 hover:translate-y-0.5 gap-15 sm:gap-10 p-4">
+    <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-15 sm:gap-10 p-4">
         @foreach($products as $product)
         <a href="{{ route('show-product', $product->slug) }}">
             <div class="flex flex-col gap-3">

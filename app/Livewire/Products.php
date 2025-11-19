@@ -10,8 +10,6 @@ class Products extends Component
     public $products;
     public $total;
 
-    public $pagination;
-
     public function mount(){
         $this -> products = Product::all();
         $this -> total = Product::count();

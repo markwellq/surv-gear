@@ -15,7 +15,7 @@
                     <input type="text" name="name" placeholder="Name" class="px-4 py-2 border rounded-sm">
                     <textarea name="message" placeholder="Message" class="px-4 py-2 border rounded-sm w-full h-32 resize-none"></textarea>
                     
-                    <button class="font-semibold opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer w-[100px]">
+                    <button class="font-semibold opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer w-[100px] text-[18px] px-2 py-2 mb-5">
                         Send
                     </button>
                 </div>

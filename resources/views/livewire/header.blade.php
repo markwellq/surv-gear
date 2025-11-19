@@ -62,44 +62,78 @@
                    </ul>
                 </div>
 
-               <div x-show="openAccount" x-transition x-cloak class="fixed inset-0">
+               <div x-show="openAccount"x-cloak class="fixed inset-0">
                   <div class="absolute inset-0 bg-black/50">
-                     <div @click.away="openAccount = false" class="absolute w-[300px] h-[250px] md:w-[400px] bg-(--nav-color) right-0 top-[145px] shadow-md">
+                     <div @click.away="openAccount = false" class="absolute w-[300px] h-full md:w-[400px] bg-(--nav-color) right-0 top-0 shadow-md">
+
                         <div class="flex flex-col items-end gap-4 p-4">
-
-                           @guest
-                            <li>
-                                <a class="" href="{{route('login')}}">Login</a>
-                            </li>
-                            <li>
-                                <a class="" href="{{route('register')}}">Register</a>
-                            </li>
-                           @endguest
-
-                           @auth
-                             
-
-                              <p class="text-(--text-white)">Authed</p>
-
-                              <a href="/logout" class="text-(--text-white)">Logout</a>
-                           @endauth
-
-                           <button @click="openAccount=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2 flex">
+                           <button @click="openAccount=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2">
                               <x-bi-x class="w-10 h-10" />
                            </button>
+                        </div> 
+
+                        <div class="flex flex-col items-center justify-center gap-4 p-4">
+                           @guest
+                           <div class="flex flex-col gap-4 justify-center  items-center">
+                              <div>
+                                 <p class="text-(--text-white)">Please log in to make a purchase</p>
+                              </div>
+                              <div class="flex flex-col items-center justify-center gap-6 mt-5">
+                                 <li>
+                                    <a class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[18px]" href="{{route('login')}}">Login</a>
+                                 </li>
+                                 <li>
+                                    <a class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[18px]" href="{{route('register')}}">Register</a>
+                                 </li>
+                              </div>
+                           </div>
+                           @endguest
                         </div>
+
+                           @auth
+                           <div class="flex flex-col gap-4 justify-center items-center"> 
+                              <a href="/profile" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[24px]">My Account</a>
+                              <a href="/logout" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] hover:text-red-300 text-[24px]">Logout</a>
+                           </div>
+                           @endauth
                      </div>
                   </div>
                 </div>
 
-                <div x-show="openBackpack" x-transition x-cloak class="fixed inset-0">
+                <div x-show="openBackpack" x-cloak class="fixed inset-0">
                   <div class="absolute inset-0 bg-black/50">
                      <div @click.away="openBackpack = false" class="absolute w-[300px] h-full md:w-[400px] bg-(--nav-color) right-0 shadow-md">
-                        <div class="flex flex-col items-end gap-4 p-4">
-                           <button @click="openBackpack=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2">
+
+                          <div class="flex flex-col items-end gap-4 p-4">
+                           <button @click="openAccount=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2">
                               <x-bi-x class="w-10 h-10" />
                            </button>
+                        </div> 
+
+                        <div class="flex flex-col items-center justify-center gap-4 p-4">
+                           @guest
+                           <div class="flex flex-col gap-4 justify-center  items-center">
+                              <div>
+                                 <p class="text-(--text-white)">Please log in to make a purchase</p>
+                              </div>
+                              <div class="flex flex-col items-center justify-center gap-6 mt-5">
+                                 <li>
+                                    <a class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[18px]" href="{{route('login')}}">Login</a>
+                                 </li>
+                                 <li>
+                                    <a class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[18px]" href="{{route('register')}}">Register</a>
+                                 </li>
+                              </div>
+                           </div>
+                           @endguest
                         </div>
+
+                           @auth
+                           <div class="flex flex-col gap-4 justify-center items-center"> 
+                              <a href="/profile" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[24px]">My Account</a>
+                              <a href="/logout" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] hover:text-red-300 text-[24px]">Logout</a>
+                           </div>
+                           @endauth
                      </div>
                   </div>
                 </div>
@@ -110,6 +144,7 @@
                            <div class="flex flex-row items-center justify-center gap-4">
                               <div>
                                  <nav class="flex flex-col items-center justify-center md:flex-row gap-2 md:gap-6 mt-3">
+                                    <a href="/gear" class="hover:border-b-[0.1px] font-bold">All</a>
                                     @foreach ($categories as $category)
                                     <li class="font-bold">
                                        <a href="{{ route('show-category', $category->slug) }}" class="hover:border-b-[0.1px]">
@@ -159,6 +194,7 @@
                                        </button>
                                     </div>
                                     <nav class="flex flex-col items-left justify-center gap-2 md:gap-4 mt-10 px-2">
+                                      <a href="/gear" class="hover:border-b-[0.1px] font-bold text-(--text-white) w-5">All</a>
                                        @foreach ($categories as $category)
                                        <li class="font-bold text-(--text-white)">
                                           <a href="{{ route('show-category', $category->slug) }}" class="hover:border-b-[0.1px]">

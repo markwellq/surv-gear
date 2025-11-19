@@ -117,7 +117,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 class="text-[18px] md:text-[24px]" @click="openQuestion = true ">
-                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet ?
                         </h4>
                     </div>
 
@@ -137,7 +137,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet ?
                         </h4>
                     </div>
                     <div>
@@ -157,7 +157,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet ?
                         </h4>
                     </div>
 
@@ -177,7 +177,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet ?
                         </h4>
                     </div>
 
@@ -197,7 +197,7 @@
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
-                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet ?
                         </h4>
 
                     </div>

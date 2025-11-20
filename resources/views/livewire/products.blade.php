@@ -1,11 +1,21 @@
 {{-- Homepage --}}
-<section class="mt-10 mb-10">
-    <div class="flex flex-col justify-center items-center mb-10">
-        <h3 class="text-[18px] md:text-[24px] lg:text-[28px] font-bold text-(--text-white)">SURV ALL GEAR</h3>
-        <p class="text-[14px] md:text-[16px] lg:text-[18px] text-(--text-white)">
-            {{ $total }} products
-        </p>
-    </div>
+<section class=" mb-10">
+
+     <div class="flex items-center justify-center">
+        <p class="text-(--text-white) text-[14px]">Lorem, ipsum dolor. ALL</p>
+     </div>
+
+               <div class="flex flex-row items-center justify-between mb-10 container mx-auto px-10">
+                <div>
+                    <p class="text-(--text-white)">Search</p>
+                </div>
+            
+                <div>
+                  <p class="text-[14px] md:text-[16px] lg:text-[18px] text-(--text-white)">
+                     {{ $total }} products
+                  </p> 
+                </div>
+            </div>
     <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-15 sm:gap-10 p-4">
         @foreach($products as $product)
         <a href="{{ route('show-product', $product->slug) }}">

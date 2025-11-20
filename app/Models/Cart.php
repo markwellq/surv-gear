@@ -1,28 +1,23 @@
 <?php
 
 namespace App\Models;
-
+use App\Models\User;
 use App\Models\CartItem;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Product extends Model
+class Cart extends Model
 {
     protected $fillable = [
-        'name',
-        'description',
-        'short_desc',
-        'short_desc_2',
-        'price',
-        'image',
-        'second_image',
-        'category_id'
+        'total_price',
+        'user_id',
+        'status'
     ];
 
-     public function category(): BelongsTo 
+       public function user(): BelongsTo 
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(User::class);
     }
 
     public function cartItems(): HasMany

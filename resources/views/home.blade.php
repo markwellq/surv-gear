@@ -1,6 +1,8 @@
+
 @extends('layout')
 
 @section('main')
+
     <section class="mx-auto">
         
         <div class="relative">
@@ -68,24 +70,49 @@
             <h2 class="text-[24px] md:text-[32px] font-bold">Built for the Wild. Trusted by the Best.</h2>
             <p class="text-[18px]">Partners who share our spirit of adventure.</p>
 
-            <div class="flex flex-row gap-10 py-4">
-                <div class="w-25 h-20 md:w-45 md:h-25 flex items-center justify-center">
-                    <img src="{{ asset('storage/images/sponsors/sponsor-1.png') }}" alt="sponsor-1"
-                    class="object-contain w-full h-full opacity-90 hover:opacity-100 hover:scale-105 transition-scale duration-350">
+         <div class="relative w-full flex items-center justify-center py-10">
+            <div class="swiper mySwiper h-28 w-[800px] md:w-[1000px] border-b-[0.1px]">
+                <div class="swiper-wrapper">
+                    @foreach ($slides as $slide)
+                        <div class="swiper-slide flex items-center justify-center">
+                            <img src="{{ asset('/storage' . $slide) }}" 
+                                 class="w-[120px] h-[120px] object-contain mx-auto select-none p-2">
+                        </div>
+                    @endforeach
                 </div>
-                <div class="w-25 h-20 md:w-45 md:h-25 flex items-center justify-center">
-                    <img src="{{ asset('storage/images/sponsors/sponsor-2.svg') }}" alt="sponsor-2"
-                    class="object-contain w-full h-full opacity-90 hover:opacity-100 hover:scale-105 transition-scale duration-350">
-                </div>
-                <div class="w-20 h-20 md:w-45 md:h-25 flex items-center justify-center">
-                    <img src="{{ asset('storage/images/sponsors/sponsor-3.svg') }}" alt="sponsor-3"
-                    class="object-contain w-full h-full opacity-90 hover:opacity-100 hover:scale-105 transition-scale duration-350">
-                </div>
-                <div class="w-20 h-20 md:w-45 md:h-25 flex items-center justify-center">
-                    <img src="{{ asset('storage/images/sponsors/sponsor-4.svg') }}" alt="sponsor-4"
-                    class="object-contain w-full h-full opacity-90 hover:opacity-100 hover:scale-105 transition-scale duration-350">
-                </div>
+            
+                {{-- <div class="hiden md:block swiper-button-next absolute right-0 top-10 -translate-y-1/2  p-2"></div> --}}
+                {{-- <div class="hiden md:block swiper-button-prev absolute left-0 top-10 -translate-y-1/2  p-2"></div> --}}
             </div>
         </div>
+
+        </div>
     </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        freeMode: true,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            320: { slidesPerView: 1, spaceBetween: 20 },
+            640: { slidesPerView: 2, spaceBetween: 30 },
+            768: { slidesPerView: 3, spaceBetween: 40 },
+            1024: { slidesPerView: 4, spaceBetween: 120  }
+        }
+    });
+});
+</script>
 @endsection
+

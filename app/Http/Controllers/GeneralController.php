@@ -10,9 +10,19 @@ class GeneralController extends Controller
 {
      public function home()
     {   
+       $slides = [
+            '/images/sponsors/sponsor-1.png',
+            '/images/sponsors/sponsor-2.svg',
+            '/images/sponsors/sponsor-4.svg',
+            '/images/sponsors/sponsor-5.svg',
+            '/images/sponsors/sponsor-6.svg',
+            '/images/sponsors/sponsor-7.svg',
+            '/images/sponsors/sponsor-8.webp',
+        ];
+
         $products = Product::where('discount', '1')->get();
 
-        return view("home", compact('products'));
+        return view("home", compact('products', 'slides'));
     }
 
     public function gear()

@@ -48,18 +48,12 @@
             </div>
           </div>
 
-          <div class="flex flex-col items-center justify-center gap-3">
-             <div class="flex flex-col items-center justify-center gap-2">
-                <p class="text-white">Quantity</p>
-                <button class="border text-(--text-white) border-white py-2 px-10">not working</button>
-            </div>
-
+          <div class="flex  items-center justify-center gap-3">
             <div>
-                <button class="border text-(--text-white) border-white py-2 px-10">
-                    Add to Cart
-                </button>
+                @livewire('add-to-cart', ['productId' => $product->id])
             </div>
-          </div>
+          </div
+
                  <div class="flex flex-col gap-2 ">
                     <p class="text-(--text-white)">{{ $product->description }}</p>
                     <p class="text-(--text-white)">• {{ $product->short_desc }}</p>

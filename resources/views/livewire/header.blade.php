@@ -129,10 +129,7 @@
                         </div>
 
                            @auth
-                           <div class="flex flex-col gap-4 justify-center items-center"> 
-                              <a href="/profile" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[24px]">My Account</a>
-                              <a href="/logout" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] hover:text-red-300 text-[24px]">Logout</a>
-                           </div>
+                             @livewire('carts')
                            @endauth
                      </div>
                   </div>

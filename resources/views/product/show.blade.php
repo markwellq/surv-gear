@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('main')
-<div class="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-20 bg-(--product-color) ">
+<div class="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-20 bg-(--product-color) py-22">
 
 
     <div class="overflow-hidden w-full p-4 max-w-xl">

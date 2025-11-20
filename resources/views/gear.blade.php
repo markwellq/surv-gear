@@ -1,25 +1,9 @@
 @extends('layout')
 
 @section('main')
-    <div class="bg-(--product-color)">
-        <div class="mx-auto">
-
-            <div class="flex flex-row items-center justify-between mt-10 mb-10 container mx-auto px-10">
-                <div>
-                    <p class="text-(--text-white)">Filters</p>
-                </div>
-                <div>
-                    <p>Lorem, ipsum dolor.</p>
-                </div>
-            
-                <div>
-                  <p class="text-[14px] md:text-[16px] lg:text-[18px] text-(--text-white)">
-                     {{ $total }} products
-                  </p> 
-                </div>
-            </div>
-
-            <div>
+    <div class="bg-(--product-color) py-10">
+        <div class="mx-auto mb-10">
+            <div class="flex items-center justify-center max-w-1xl">
                 @livewire('products')
             </div>
         </div>

@@ -114,7 +114,7 @@
                            @guest
                            <div class="flex flex-col gap-4 justify-center  items-center">
                               <div>
-                                 <p class="text-(--text-white)">Please log in to make a purchase</p>
+                                 <p class="text-(--text-white)">Please log in to use cart</p>
                               </div>
                               <div class="flex flex-col items-center justify-center gap-6 mt-5">
                                  <li>
@@ -144,7 +144,9 @@
                            <div class="flex flex-row items-center justify-center gap-4">
                               <div>
                                  <nav class="flex flex-col items-center justify-center md:flex-row gap-2 md:gap-6 mt-3">
-                                    <a href="/gear" class="hover:border-b-[0.1px] font-bold">All</a>
+                                    <li>
+                                       <a href="/gear" class="hover:border-b-[0.1px] font-bold">All</a>
+                                    </li>
                                     @foreach ($categories as $category)
                                     <li class="font-bold">
                                        <a href="{{ route('show-category', $category->slug) }}" class="hover:border-b-[0.1px]">

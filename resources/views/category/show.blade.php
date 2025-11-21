@@ -1,6 +1,6 @@
 @extends('layout')
 @section('main')
-<div class="bg-(--product-color) py-10">
+<div class="bg-(--product-color) py-30">
     <div class="mx-auto mb-10">
 
         <div class="flex items-center justify-center  text-[14px]">

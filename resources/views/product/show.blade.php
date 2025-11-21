@@ -12,7 +12,8 @@
     <div class="flex flex-col md:justify-center md:items-left gap-4 p-4 max-w-lg">
          <h1 class="text-(--text-white) font-bold text-[24px] md:text-[32px] lg:text-[42px]">{{ $product->name }}</h1>
          <p class="text-(--text-white) text-[24px] md:text-[28px]"> {{ $product->price }}$</p>
-         <div class="flex flex-row gap-2">
+
+          <div class="flex flex-row gap-2">
                 <div class="p-1 bg-(--bg-white) rounded-sm">
                     <x-heroicon-s-star class="w-3 h-3 sm:w-4 sm:h-4"/>
                 </div>
@@ -48,7 +49,7 @@
             </div>
           </div>
 
-          <div class="flex  items-center justify-center gap-3">
+          <div class="flex items-center justify-center mt-2 mb-2">
             <div>
                 @livewire('add-to-cart', ['productId' => $product->id])
             </div>

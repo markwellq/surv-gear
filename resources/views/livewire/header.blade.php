@@ -114,7 +114,7 @@
                            @guest
                            <div class="flex flex-col gap-4 justify-center  items-center">
                               <div>
-                                 <p class="text-(--text-white)">Please log in to use cart</p>
+                                 <p class="text-(--text-white)">Please log in to use a backpack/p>
                               </div>
                               <div class="flex flex-col items-center justify-center gap-6 mt-5">
                                  <li>

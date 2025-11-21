@@ -1,28 +1,38 @@
 <div>
     @if($cart && $cart->cartItems->count())
         @foreach ($cart->cartItems as $item)
-            <div class="flex items-center justify-between mb-2">
-                <div class="w-16 h-16 ">
-                   <img src="{{ asset('storage/' . $item->product->image) }}" alt="{{ $item->product->name }}" class="w-full h-full object-cover rounded">
+            <div class="flex flex-col md:flex-row gap-4 items-center justify-between mb-2 py-2 px-4">
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-center">
+                    <div class="w-[70px] h-[70px] md:w-[150px] md:h-[150px]">
+                        <img src="{{ asset('storage/' . $item->product->image) }}" alt="{{ $item->product->name }}" class="w-full h-full object-cover rounded">
+                    </div>
+                    <div class="flex flex-col gap-2 md:gap-4 items-center justify-center border-0 md:border-r-[0.1px] px-4 border-white">
+                        <p class="text-(--text-white)">{{ $item->product->name }}</p>
+
+                        <div class="flex items-center gap-4">
+                          <button wire:click="decrementQuantity({{ $item->id }})" class="text-(--text-white) px-2 border-[0.1px] border-white text-[16px] cursor-pointer">
+                              -
+                          </button>
+                          <span class="text-(--text-white) font-bold">{{ $item->quantity }}</span>
+                          <button wire:click="incrementQuantity({{ $item->id }})" class="text-(--text-white) px-2 border-[0.1px] border-white text-[16px] cursor-pointer">
+                              +
+                          </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center font-bold">
+                        <p class="text-(--text-white)">Total: ${{ $item->quantity * $item->product->price }}</p>
+                    </div>
                 </div>
 
-                <div>
-                    <p class="text-(--text-white)">{{ $item->product->name }}</p>
-                    <p class="text-(--text-white)">Price: ${{ $item->product->price }}</p>
-                </div>
-
-                <div class="flex items-center gap-2">
-                    <button wire:click="decrementQuantity({{ $item->id }})" class="text-(--text-white) px-2">-</button>
-                    <span class="text-(--text-white) font-bold">{{ $item->quantity }}</span>
-                    <button wire:click="incrementQuantity({{ $item->id }})" class="text-(--text-white) px-2">+</button>
-                </div>
-
-                <p class="text-(--text-white)">Total: ${{ $item->quantity * $item->product->price }}</p>
             </div>
         @endforeach
-        <p class="text-(--text-white) mt-5 border-t-[0.1px]">
-            All Total: ${{ $cart->cartItems->sum(fn($i) => $i->quantity * $i->product->price) }}
-        </p>
+        <div class="flex flex-col gap-4 py-2 px-4 border-t-[0.1px] border-white">
+            <p class="text-(--text-white) mt-5 text-[28px]">
+                All Total: ${{ $cart->cartItems->sum(fn($i) => $i->quantity * $i->product->price) }}
+            </p>
+            <button class="text-(--text-white) cursor-pointer py-2 border-[0.1px] px-6 border-white hover:bg-white/10">Order</button>
+        </div>
     @else
         <p class="text-(--text-white)">Your backpack is empty</p>
     @endif

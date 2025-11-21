@@ -102,10 +102,10 @@
 
                 <div x-show="openBackpack" x-cloak class="fixed inset-0">
                   <div class="absolute inset-0 bg-black/50">
-                     <div @click.away="openBackpack = false" class="absolute w-[300px] h-full md:w-[400px] bg-(--nav-color) right-0 shadow-md">
+                     <div @click.away="openBackpack = false" class="absolute w-[300px] h-full md:w-[500px] bg-(--nav-color) right-0 shadow-md">
 
                           <div class="flex flex-col items-end gap-4 p-4">
-                           <button @click="openAccount=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2">
+                           <button @click="openBackpack=false" class="w-12 h-12 cursor-pointer text-(--text-white) p-2">
                               <x-bi-x class="w-10 h-10" />
                            </button>
                         </div> 
@@ -128,9 +128,12 @@
                            @endguest
                         </div>
 
+                        <div>
                            @auth
-                             @livewire('carts')
+                           <p class="font-bold text-(--text-white) flex items-center justify-center">Your backpack</p>
+                           @livewire('carts')
                            @endauth
+                        </div>
                      </div>
                   </div>
                 </div>

@@ -12,12 +12,15 @@ class Product extends Model
     protected $fillable = [
         'name',
         'description',
+        'slug',
         'short_desc',
         'short_desc_2',
         'price',
         'image',
         'second_image',
-        'category_id'
+        'category_id',
+        'discount',
+        'discount_price'
     ];
 
      public function category(): BelongsTo 

@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeneralController;
 
@@ -18,6 +20,11 @@ Route::get("/product/{slug}", [ProductController::class, "show"])->name("show-pr
 
 
 Route::get("/profile", [AuthController::class, 'user'])->middleware("auth")->name("profile");
+
+Route::get("/admin", [GeneralController::class, "admin"])->middleware(AdminMiddleware::class)->name("admin");
+
+Route::get("/admin", [AdminController::class, 'index'])->middleware(AdminMiddleware::class);
+Route::post("/admin", [AdminController::class, 'store'])->middleware(AdminMiddleware::class);
 
 Route::get("/login", [AuthController::class, "login"])->name("login");
 Route::get("/register", [AuthController::class, "register"])->name("register");

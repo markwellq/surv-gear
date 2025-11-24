@@ -48,4 +48,8 @@ class GeneralController extends Controller
         return view("aboutUs");
     }
 
+    public function admin(){
+        return view('admin.admin');
+    }
+
 }

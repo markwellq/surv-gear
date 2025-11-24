@@ -104,7 +104,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col xl:flex-row gap-4 md:gap-8 justify-center items-center p-4 mb-40 mt-10">
+    <div class="flex flex-col xl:flex-row gap-4 md:gap-8 justify-center items-center p-8 md:p-4 mb-40 mt-10">
         <div class="flex flex-col gap-1 max-w-[600px]">
             <h4 class="font-bold text-[32px] md:text-[52px]">The most popular questions</h4>
             <span class="font-bold text-[32px] md:text-[52px]">We got you.</span>
@@ -113,42 +113,42 @@
 
 
         <div class="flex flex-col justify-center gap-8 items-center max-w-[800px] border-[0.1px] p-4 mt-10">
-            <div x-data="{openQuestion: false}" x-transition x-cloak class="w-[400px] md:w-[800px] px-4">
-                <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
-                    <div>
-                        <h4 class="text-[18px] md:text-[24px]" @click="openQuestion = true ">
-                            Lorem ipsum dolor sit amet ?
-                        </h4>
-                    </div>
-
-                    <div>
-                         <x-heroicon-o-plus class="w-6 h-6"/>
-                    </div>
-                </div>
-
-                <div x-show="openQuestion" class="bg-(--gray-color-3)">
-                    <p @click="openQuestion = false" class="mt-5 p-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam minima explicabo in repellat pariatur.
-                    </p>
-                </div>
-            </div>
-
-            <div x-data="{openQuestion: false}" x-transition x-cloak class="w-[400px] md:w-[800px] px-4">
+           <div x-data="{openQuestion: false}" x-cloak class="w-[400px] md:w-[800px] px-4">
                 <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
                     <div>
                         <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
                             Lorem ipsum dolor sit amet ?
                         </h4>
                     </div>
+
                     <div>
                         <x-heroicon-o-plus class="w-6 h-6"/>
                     </div>
                 </div>
-                 
 
                 <div x-show="openQuestion" class="bg-(--gray-color-3)">
-                    <p @click.away="openQuestion = false" class="mt-5 p-2">
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, facere veritatis vero beatae quos vitae!
+                    <p @click="openQuestion = false" class="mt-5 p-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis cupiditate in laudantium temporibus excepturi.
+                    </p>
+                </div>
+            </div>
+
+            <div x-data="{openQuestion: false}" x-cloak class="w-[400px] md:w-[800px] px-4">
+                <div class="flex flex-row items-center justify-between opacity-70 hover:opacity-100 hover:border-b-[0.1px] cursor-pointer">
+                    <div>
+                        <h4 @click="openQuestion = true" class="text-[18px] md:text-[24px]">
+                            Lorem ipsum dolor sit amet ?
+                        </h4>
+                    </div>
+
+                    <div>
+                        <x-heroicon-o-plus class="w-6 h-6"/>
+                    </div>
+                </div>
+
+                <div x-show="openQuestion" class="bg-(--gray-color-3)">
+                    <p @click="openQuestion = false" class="mt-5 p-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis cupiditate in laudantium temporibus excepturi.
                     </p>
                 </div>
             </div>

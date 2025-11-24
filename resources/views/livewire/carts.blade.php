@@ -21,7 +21,12 @@
                     </div>
 
                     <div class="flex items-center justify-center font-bold">
-                        <p class="text-(--text-white)">Total: ${{ $item->quantity * $item->product->price }}</p>
+                        @if ($item->product->discount)
+                         <p class="text-(--text-white)">Total: ${{ number_format($item->quantity * $item->product->discount_price, 2) }}</p>
+                         
+                        @else
+                         <p class="text-(--text-white)">Total: {{ ($item->quantity * $item->product->price) }}</p>
+                        @endif
                     </div>
                 </div>
 
@@ -29,11 +34,24 @@
         @endforeach
         <div class="flex flex-col gap-4 py-2 px-4 border-t-[0.1px] border-white">
             <p class="text-(--text-white) mt-5 text-[28px]">
-                All Total: ${{ $cart->cartItems->sum(fn($i) => $i->quantity * $i->product->price) }}
+                All Total: $ {{ 
+                number_format(
+                    $cart->cartItems->sum(
+                        fn($i) =>
+                        $i->quantity * (
+                            $i->product->discount_price > 0
+                            ? $i->product->discount_price
+                            : $i->product->price
+                        )
+                ),2
+                )
+                 }}
             </p>
             <button class="text-(--text-white) cursor-pointer py-2 border-[0.1px] px-6 border-white hover:bg-white/10">Order</button>
         </div>
     @else
-        <p class="text-(--text-white)">Your backpack is empty</p>
+    <div class="flex items-center justify-center mt-20">
+        <p class="text-(--text-white)">Nothing to buy</p>
+    </div>
     @endif
 </div>

@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('main')
-<div class="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-20 bg-(--product-color) py-22">
+<div class="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-20 bg-(--product-color) py-28">
 
 
     <div class="overflow-hidden w-full p-4 max-w-xl">
@@ -11,7 +11,15 @@
 
     <div class="flex flex-col md:justify-center md:items-left gap-4 p-4 max-w-lg">
          <h1 class="text-(--text-white) font-bold text-[24px] md:text-[32px] lg:text-[42px]">{{ $product->name }}</h1>
-         <p class="text-(--text-white) text-[24px] md:text-[28px]"> {{ $product->price }}$</p>
+         @if ($product->discount)
+            <div class="flex flex-row gap-2">
+                <p style="text-decoration: line-through" class="text-(--text-white) text-[24px] md:text-[28px]"> {{ $product->price }}$</p>
+                <p class="text-(--text-white) text-[24px] md:text-[28px]"> {{ $product->discount_price }}$</p>
+
+            </div>
+         @else
+            <p class="text-(--text-white) text-[24px] md:text-[28px]"> {{ $product->price}}$</p>
+         @endif 
 
           <div class="flex flex-row gap-2">
                 <div class="p-1 bg-(--bg-white) rounded-sm">

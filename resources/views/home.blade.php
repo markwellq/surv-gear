@@ -22,7 +22,7 @@
 
         <div class="flex flex-col items-center justify-center p-2 bg-(--product-color) py-10">
              <div class="flex flex-col justify-center items-center mb-10">
-                <h3 class="text-[18px] md:text-[24px] lg:text-[28px] font-bold text-(--text-white)">Discount Lorem. %</h3>
+                <h3 class="text-[18px] md:text-[24px] lg:text-[28px] font-bold text-(--text-white)">Discount best gear</h3>
                 <p class="text-[16px] md:text-[22px] lg:text-[26px] text-(--text-white)">Lorem ipsum</p>
              </div>
 

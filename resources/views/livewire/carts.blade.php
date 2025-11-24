@@ -1,4 +1,4 @@
-<div>
+<div x-data="{payment: false}">
     @if($cart && $cart->cartItems->count())
         @foreach ($cart->cartItems as $item)
             <div class="flex flex-col md:flex-row gap-4 items-center justify-between mb-2 py-2 px-4">
@@ -47,11 +47,17 @@
                 )
                  }}
             </p>
-            <button class="text-(--text-white) cursor-pointer py-2 border-[0.1px] px-6 border-white hover:bg-white/10">Order</button>
+            <button @click="payment=true" class="text-(--text-white) cursor-pointer py-2 border-[0.1px] px-6 border-white hover:bg-white/10">Order</button>
         </div>
     @else
     <div class="flex items-center justify-center mt-20">
         <p class="text-(--text-white)">Nothing to buy</p>
     </div>
     @endif
+
+    <div x-show="payment" x-cloak>
+        <div class="flex items-center justify-center mt-5">
+            <p @click="payment=false" class="text-green-300 select-none">Success, thank for purchase</p>
+        </div>
+    </div>
 </div>

@@ -7,7 +7,7 @@
 
                <div class="flex flex-row items-center justify-between mb-10 container mx-auto px-10">
                 <div>
-                    <p class="text-(--text-white)">Search</p>
+                    <p class="text-(--text-white)">Lorem</p>
                 </div>
             
                 <div>

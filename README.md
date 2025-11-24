@@ -81,8 +81,14 @@ VALUES
 
 &nbsp;&nbsp;
 
-INSERT INTO products (category_id, name, slug, description, short_desc, short_desc_2, price, image, second_image, created_at, updated_at)
+&nbsp;
+&nbsp; !!!! Attention, At the stage after creating the database, I added discount, discount_price
+
+INSERT INTO products
+(category_id, name, slug, description, short_desc, short_desc_2, price, image, discount, discount_price, second_image, created_at, updated_at)
 VALUES
+
+&nbsp;&nbsp;
 
 (1, 'Fixed Blade Knife', 'fixed-blade-knife' 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
 'Lorem ipsum dolor sit amet, consectetur',
@@ -141,3 +147,96 @@ VALUES
 (3, 'Hiking Hydration 45L', 'hydration-45', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
 'Lorem ipsum dolor sit amet, consectetur',
 'Lorem ipsum dolor sit amet, consectetur', 69.99, 'images/backpacks/backpack-2.webp', '', NOW(), NOW());
+&nbsp;
+
+(2,
+'Sleeping Pad',
+'sleeping-pad',
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+39.99,
+'images/sleep/inflatable-sleeping-pad.webp',
+0,  
+ 0.00,
+NULL,
+NOW(), NOW());
+&nbsp;
+
+(2,
+'Sleeping Pad',
+'sleeping-pad',
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+39.99,
+'images/sleep/inflatable-sleeping-pad.webp',
+0,  
+ 0.00,
+NULL,
+NOW(), NOW());
+&nbsp;
+
+(4,
+'2 Person Hiking Tent',
+'2-person-hiking-tent',
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+99.99,
+'images/sleep/inflatable-sleeping-pad.webp',
+0,  
+0.00,
+NULL,
+NOW(), NOW());
+&nbsp;
+
+(
+4,
+'4 Person Hiking Tent',
+'4-person-hiking-tent',
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+119.99,
+'images/tents/4-person-tent.webp',
+0,
+0.00,
+NULL,
+NOW(),
+NOW()
+);
+&nbsp;
+
+(
+4,
+'2 Person Pop Up Tent',
+'2-person-tent',
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+79.99,
+'images/tents/2-person-tent.webp',
+0,
+0.00,
+NULL,
+NOW(),
+NOW()
+);
+&nbsp;
+
+(
+3,
+'Hiking Hydration 65L',
+'hiking-hydration-65',
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et aliquam tellus, tincidunt feugiat arcu. Maecenas in felis nec est blandit vestibulum. Morbi at imperdiet nisi. Nam vitae sapien consequat, consequat turpis ut, consequat sapien. Aenean tempor iaculis magna, nec congue elit rhoncus id. Donec vel magna nisl. Duis et lectus a velit pulvinar vulputate.',
+'Lorem ipsum dolor sit amet, consectetur',
+'Lorem ipsum dolor sit amet, consectetur',
+69.99,
+'images/backpacks/backpack-3.webp',
+0,
+0.00,
+NULL,
+NOW(),
+NOW()
+);

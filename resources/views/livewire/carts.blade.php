@@ -82,7 +82,7 @@
                 </form>
                      <div class="flex flex-row justify-between items-center mt-10">
                         <button @click="purchasing=true" class="text-(--text-black) cursor-pointer py-2 px-6 border-[0.1px] border-black hover:bg-white/10 ">Order</button>
-                            <p class="font-bold">
+                            <p class="font-bold text-[14px] md:text-[18px]">
                                      All Total: {{ 
                                         number_format(
                                             $cart->cartItems->sum(

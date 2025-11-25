@@ -47,7 +47,7 @@
                 )
                  }} $
             </p>
-            <button @click="payment=true" class="text-(--text-white) cursor-pointer py-2 border-[0.1px] px-6 border-white hover:bg-white/10">Order</button>
+            <button @click="payment = true" class="text-(--text-white) cursor-pointer py-2 border-[0.1px] px-6 border-white hover:bg-white/10">Order</button>
         </div>
     @else
     <div class="flex items-center justify-center mt-20">
@@ -57,7 +57,9 @@
 
     <div x-show="payment" x-cloak>
         <div class="flex items-center justify-center mt-5">
-            <p @click="payment=false" class="text-green-300 select-none">Success, thank for purchase</p>
+            <p class="text-green-400 select-none" @click="payment=false">Success, thank you for purchase</p>
         </div>
     </div>
 </div>
+
+{{-- No commit? --}}

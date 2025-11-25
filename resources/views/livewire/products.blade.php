@@ -43,8 +43,16 @@
                             <x-heroicon-s-star class="w-3 h-3 sm:w-4 sm:h-4"/>
                         </div>
                     </div>
-                    <h3 class="text-(--text-white) font-bold text-[14px] sm:text-[15px] lg:text-[18px]">{{ $product->name }}</h3>
-                    <p class="text-(--text-white)">{{ $product->price }}$</p>
+                       @if ($product->discount)
+                            <h3 class="text-(--text-white) font-bold text-[14px] sm:text-[15px] lg:text-[18px]">{{ $product->name }}</h3>
+                            <div class="flex flex-row gap-2">
+                                <p style="text-decoration: line-through" class="text-(--text-white)">{{ $product->price }}$</p>
+                                <p class="text-(--text-white)">{{ $product->discount_price }}$</p>
+                            </div>
+                        @else 
+                            <h3 class="text-(--text-white) font-bold text-[14px] sm:text-[15px] lg:text-[18px]">{{ $product->name }}</h3>
+                            <p class="text-(--text-white)">{{ $product->price }}$</p>
+                        @endif
                 </div>
             </div>
         </a>

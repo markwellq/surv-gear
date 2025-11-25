@@ -45,7 +45,7 @@
             </form>
 
             @if ($errors->any())
-                <div class="text-red-500 p-2 mb-2">
+                <div class="text-red-500 p-2 mb-2 flex items-center justify-center">
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -55,7 +55,7 @@
             @endif
             
             @if(session('message'))
-                <div class="text-green-500 p-2 mb-2">
+                <div class="text-green-500 p-2 mb-2 flex item-center justify-center">
                     {{ session('message') }}
                 </div>
             @endif

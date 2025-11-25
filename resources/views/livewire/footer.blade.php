@@ -21,7 +21,7 @@
                             <a href="/aboutUs">About Us</a>
                         </li>
                         <li>
-                            <ahref="/contact">Contact</a>
+                            <a href="/contact">Contact</a>
                         </li>
                         <li>
                             <a href="/account">Account</a>

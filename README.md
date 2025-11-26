@@ -1,7 +1,7 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-&nbsp; **Google disk - https://drive.google.com/drive/folders/1jIjYyPfxcE-oyVyuCeahJ4QkHnhkEGtg?usp=sharing**
-&nbsp; **Figma : https://www.figma.com/site/roHIejwgv0T6kZpUtdDPcj/Surv-gear?node-id=0-1&t=V3HCcQYyGNlORGYP-1**
+&nbsp; **Google disk - https://drive.google.com/drive/folders/1jIjYyPfxcE-oyVyuCeahJ4QkHnhkEGtg?usp=sharing** &nbsp;
+&nbsp; **Figma : https://www.figma.com/site/roHIejwgv0T6kZpUtdDPcj/Surv-gear?node-id=0-1&t=V3HCcQYyGNlORGYP-1** &nbsp;
 
 &nbsp; - docker-compose up -d --build
 

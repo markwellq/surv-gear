@@ -140,7 +140,7 @@
 
                 <div x-show="openGear" x-transition x-cloak class="fixed inset-0">
                      <div class="absolute inset-0">
-                        <div @click.away="openGear = false" class="absolute shadow-sm top-[150px] left-1/2 transform -translate-x-1/2 w-[400px] h-[170px] md:h-[50px] md:w-[550px] bg-(--bg-white) rounded-b-xl">
+                        <div @click.away="openGear = false" class="absolute shadow-sm top-[150px] left-1/2 transform -translate-x-1/2 w-[400px] h-[200px] md:h-[50px] md:w-[550px] bg-(--bg-white) rounded-b-xl">
                            <div class="flex flex-row items-center justify-center gap-4">
                               <div>
                                  <nav class="flex flex-col items-center justify-center md:flex-row gap-2 md:gap-6 mt-3">

@@ -33,11 +33,6 @@ class GeneralController extends Controller
         return view('gear', compact('product', 'total'));
     }
 
-     public function about()
-    {
-        return view("about");
-    }
-
     public function contact()
     {
         return view("contact");
@@ -48,8 +43,12 @@ class GeneralController extends Controller
         return view("aboutUs");
     }
 
+    public function profile()
+    {
+        return view("profile");
+    }
+
     public function admin(){
         return view('admin.admin');
     }
-
 }

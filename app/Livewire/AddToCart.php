@@ -23,6 +23,7 @@ class AddToCart extends Component
         $product = Product::find($this->productId);
 
         $item = CartItem::where('cart_id', $cart->id)
+
             ->where('product_id', $this->productId)
             ->first();
 
@@ -30,6 +31,7 @@ class AddToCart extends Component
         {
             $item->increment("quantity");
         }
+
         else
         {
             CartItem::create([

@@ -26,18 +26,15 @@ class Carts extends Component
                 ->firstOrCreate(['user_id' => $user->id]);
         }
     }
-
-     // Увеличить количество
     public function incrementQuantity($itemId)
     {
         $item = CartItem::find($itemId);
         if ($item) {
             $item->increment('quantity');
-            $this->loadCart(); // обновляем корзину
+            $this->loadCart();
         }
     }
-
-    // Уменьшить количество
+    
     public function decrementQuantity($itemId)
     {
         $item = CartItem::find($itemId);
@@ -45,7 +42,7 @@ class Carts extends Component
             $item->decrement('quantity');
             $this->loadCart();
         } elseif ($item && $item->quantity == 1) {
-            $item->delete(); // удаляем товар, если стало 0
+            $item->delete();
             $this->loadCart();
         }
     }

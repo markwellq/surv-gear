@@ -18,10 +18,7 @@ Route::get("/aboutUs", [GeneralController::class, "aboutUs"])->name("aboutUs");
 Route::get("/category/{slug}", [CategoryController::class, "show"])->name("show-category");
 Route::get("/product/{slug}", [ProductController::class, "show"])->name("show-product");
 
-
 Route::get("/profile", [AuthController::class, 'user'])->middleware("auth")->name("profile");
-
-// Route::get("/admin", [GeneralController::class, "admin"])->middleware(AdminMiddleware::class)->name("admin");
 
 Route::get("/admin", [AdminController::class, 'index'])->middleware(AdminMiddleware::class)->name('admin');
 Route::post("/admin/store", [AdminController::class, 'store'])->middleware(AdminMiddleware::class)->name('admin.store');
@@ -34,3 +31,5 @@ Route::get("/logout", [AuthController::class, "logout"])->name("logout");
 
 Route::post("/register", [AuthController::class, "registerPost"])->name("registerPost");
 Route::post("/login", [AuthController::class, "loginPost"])->name("loginPost");
+
+// to commit

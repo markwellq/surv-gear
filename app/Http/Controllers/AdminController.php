@@ -61,3 +61,6 @@ class AdminController extends Controller
         return back()->with('message', 'Product removed');
     }
 }
+
+
+// to commit

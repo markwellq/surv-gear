@@ -32,37 +32,65 @@
 
 &nbsp; - composer require blade-ui-kit/blade-icons
 
-&nbsp; - composer require codeat3/blade-carbon-icons ## **x-carbon-user** &nbsp;
-&nbsp; - composer require andreiio/blade-remix-icon ## **x-ri-arrow-down-s-line** &nbsp;
-&nbsp; - composer require codeat3/blade-bytesize-icons ## **x-bytesize-menu** &nbsp;
-&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ## **x-bi-x** &nbsp;
-&nbsp; - composer require codeat3/blade-microns ## **x-microns-right** &nbsp;
-&nbsp; - composer require codeat3/blade-teeny-icons ## **x-tni-left-small-o** &nbsp;
-&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ## **x-bi-shield-fill** &nbsp;
-&nbsp; - composer require owenvoke/blade-entypo ## **x-entypo-compass** &nbsp;
-&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ## **x-bi-lightning-charge-fill** &nbsp;
-&nbsp; - composer require andreiio/blade-remix-icon ## **x-ri-tools-fill** &nbsp;
-&nbsp; - composer require secondnetwork/blade-tabler-icons ## **x-tabler-tools** &nbsp;
-&nbsp; - composer require mallardduck/blade-boxicons ## **x-bx-world** &nbsp;
-&nbsp; - composer require codeat3/blade-iconpark ## **x-iconpark-tentbanner-o** &nbsp;
-&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ## **x-bi-check** &nbsp;
-&nbsp; - composer require blade-ui-kit/blade-heroicons ## **x-heroicon-o-plus** &nbsp;
-&nbsp; - composer require codeat3/blade-google-material-design-icons ## **x-gmdi-local-shipping-r** &nbsp;
-&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ## **x-bi-box-fill** &nbsp;
-&nbsp; - composer require codeat3/blade-ant-design-icons ## **x-antdesign-safety-certificate** &nbsp;
-&nbsp; - blade-ui-kit/blade-heroicons ## **x-heroicon-o-minus** &nbsp;
-&nbsp; - blade-ui-kit/blade-heroicons ## **x-heroicon-s-star** &nbsp;
+&nbsp; - composer require codeat3/blade-carbon-icons ##
+&nbsp; **x-carbon-user** &nbsp;
+&nbsp; - composer require andreiio/blade-remix-icon ##
+&nbsp; **x-ri-arrow-down-s-line** &nbsp;
+&nbsp; - composer require codeat3/blade-bytesize-icons ##
+&nbsp; **x-bytesize-menu** &nbsp;
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ##
+&nbsp; **x-bi-x** &nbsp;
+&nbsp; - composer require codeat3/blade-microns ##
+&nbsp; **x-microns-right** &nbsp;
+&nbsp; - composer require codeat3/blade-teeny-icons ##
+&nbsp; **x-tni-left-small-o** &nbsp;
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ##
+&nbsp; **x-bi-shield-fill** &nbsp;
+&nbsp; - composer require owenvoke/blade-entypo ##
+&nbsp; **x-entypo-compass** &nbsp;
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ##
+&nbsp; **x-bi-lightning-charge-fill** &nbsp;
+&nbsp; - composer require andreiio/blade-remix-icon ##
+&nbsp; **x-ri-tools-fill** &nbsp;
+&nbsp; - composer require secondnetwork/blade-tabler-icons ##
+&nbsp; **x-tabler-tools** &nbsp;
+&nbsp; - composer require mallardduck/blade-boxicons ##
+&nbsp; **x-bx-world** &nbsp;
+&nbsp; - composer require codeat3/blade-iconpark ##
+&nbsp; **x-iconpark-tentbanner-o** &nbsp;
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ##
+&nbsp; **x-bi-check** &nbsp;
+&nbsp; - composer require blade-ui-kit/blade-heroicons ##
+&nbsp; **x-heroicon-o-plus** &nbsp;
+&nbsp; - composer require codeat3/blade-google-material-design-icons ##
+&nbsp; **x-gmdi-local-shipping-r** &nbsp;
+&nbsp; - composer require davidhsianturi/blade-bootstrap-icons ##
+&nbsp; **x-bi-box-fill** &nbsp;
+&nbsp; - composer require codeat3/blade-ant-design-icons ##
+&nbsp; **x-antdesign-safety-certificate** &nbsp;
+&nbsp; - blade-ui-kit/blade-heroicons ##
+&nbsp;**x-heroicon-o-minus** &nbsp;
+&nbsp; - blade-ui-kit/blade-heroicons ##
+&nbsp; **x-heroicon-s-star** &nbsp;
 
 &nbsp; -PAYMENT ICONS--
 
-&nbsp; - composer require codeat3/blade-fontisto-icons ## **x-fontisto-apple-pay** &nbsp;
-&nbsp; - composer require codeat3/blade-fontisto-icons ## **x-fontisto-visa** &nbsp;
-&nbsp; - composer require codeat3/blade-fontisto-icons ## **x-fontisto-discover** &nbsp;
-&nbsp; - composer require codeat3/blade-fontisto-icons ## **x-fontisto-mastercard** &nbsp;
-&nbsp; - composer require andreiio/blade-remix-icon ## **x-ri-visa-line** &nbsp;
-&nbsp; - composer require owenvoke/blade-fontawesome ## **x-fab-apple-pay** # **x-fab-google-pay** # **x-fab-cc-amazon-pay** &nbsp;
-&nbsp; - composer require codeat3/blade-fontisto-icons ## **x-fontisto-paypal** &nbsp;
-&nbsp; - composer require codeat3/blade-simple-icons ## **x-si-discover** &nbsp;
+&nbsp; - composer require codeat3/blade-fontisto-icons ##
+&nbsp; **x-fontisto-apple-pay** &nbsp;
+&nbsp; - composer require codeat3/blade-fontisto-icons ##
+&nbsp; **x-fontisto-visa** &nbsp;
+&nbsp; - composer require codeat3/blade-fontisto-icons ## &nbsp;
+&nbsp; **x-fontisto-discover** &nbsp;
+&nbsp; - composer require codeat3/blade-fontisto-icons ## &nbsp;
+&nbsp; **x-fontisto-mastercard** &nbsp;
+&nbsp; - composer require andreiio/blade-remix-icon ## &nbsp;
+&nbsp; **x-ri-visa-line** &nbsp;
+&nbsp; - composer require owenvoke/blade-fontawesome ## &nbsp;
+&nbsp; **x-fab-apple-pay** #, **x-fab-google-pay** #, **x-fab-cc-amazon-pay** &nbsp;
+&nbsp; - composer require codeat3/blade-fontisto-icons ## &nbsp;
+&nbsp; **x-fontisto-paypal** &nbsp;
+&nbsp; - composer require codeat3/blade-simple-icons ## &nbsp;
+&nbsp; **x-si-discover** &nbsp;
 
 &nbsp; -SOCIAL MEDIA ICONS-
 

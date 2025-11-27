@@ -2,3 +2,4 @@
     <span class="text-white" wire:loading.remove>Add to backpack</span>
     <span class="text-white" wire:loading>Adding..</span>
 </button>
+

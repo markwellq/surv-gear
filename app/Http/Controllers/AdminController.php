@@ -11,8 +11,9 @@ class AdminController extends Controller
     public function index()
     {
         $categories = Category::all();
+        $products = Product::all();
 
-        return view('admin.admin', compact('categories'));
+        return view('admin.admin', compact('categories', 'products'));
     }
 
     public function store(Request $request)
@@ -48,4 +49,18 @@ class AdminController extends Controller
 
         return back()->with('message', 'Product added');
     }
+
+    public function remove(Request $request){
+        $data = $request->validate([
+            'product_id' => 'required|exists:products,id'
+        ]);
+
+        $products = Product::findOrFail($data['product_id']);
+        $products -> delete();
+
+        return back()->with('message', 'Product removed');
+    }
 }
+
+
+// to commit

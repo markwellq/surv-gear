@@ -1,4 +1,4 @@
-<footer class="relative bg-(--bg-black) text-white max-w-[1200px] h-[450px] sm:h-[500px] mx-auto py-4 xl:rounded-md xl:mt-4 xl:mb-4">
+<footer class="relative bg-(--bg-black) text-white max-w-[1200px] h-full min-h-[500px] mx-auto py-8 xl:rounded-md xl:mt-4 xl:mb-4">
     <div class="flex flex-col justify-between gap-20 p-8 z-40">
         <div class="flex flex-row xl:flex-row justify-between gap-4">
             <div class="flex flex-col gap-4">
@@ -10,10 +10,12 @@
                 <p>Build. Grow. Repeat.</p>
             </div>
 
-            <div class="flex flex-row gap-8 lg:gap-15">
-                <div class="flex flex-col gap-2">
-                    <h3 class="py-[0.1px] px-2 bg-(--bg-white) font-bold rounded-sm text-(--text-black) text-[12px] sm:text-[24px]">Company</h3>
-                    <ul class="flex flex-col gap-2 font-semibold text-[12px] sm:text-[18px]">
+            <div class="flex flex-col items-center justify-center gap-8 lg:gap-15">
+                <div class="flex flex-col gap-4">
+                    <div class="flex justify-center items-center">
+                        <h3 class="py-[0.1px] px-2 bg-(--bg-white) font-bold rounded-sm text-(--text-black) text-[16px] sm:text-[24px]">Company</h3>
+                    </div>
+                    <ul class="flex flex-col gap-4 md:flex-row font-semibold text-[14px] sm:text-[18px]">
                         <li>
                             <a href="/gear">Products</a>
                         </li>
@@ -25,42 +27,6 @@
                         </li>
                         <li>
                             <a href="/account">Account</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                    <h3 class="py-[0.1px] px-2 bg-(--bg-white) font-bold rounded-sm text-(--text-black) text-[12px] sm:text-[24px]">Lorem</h3>
-                    <ul class="flex flex-col gap-2 font-semibold text-[12px] sm:text-[18px]">
-                        <li>
-                            <a href="/">Lorem.</a>
-                        </li>
-                        <li>
-                            <a href="/">Lorem.</a>
-                        </li>
-                        <li>
-                            <a href="/">Lorem.</a>
-                        </li>
-                        <li>
-                            <a href="/">Lorem.</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                    <h3 class="py-[0.1px] px-2 bg-(--bg-white) font-bold rounded-sm text-(--text-black) text-[12px] sm:text-[24px]">Lorem</h3>
-                    <ul class="flex flex-col gap-2 font-semibold text-[12px] sm:text-[18px]">
-                        <li>
-                            <a href="/">Lorem.</a>
-                        </li>
-                        <li>
-                            <a href="/">Lorem.</a>
-                        </li>
-                        <li>
-                            <a href="/">Lorem.</a>
-                        </li>
-                        <li>
-                            <a href="/">Lorem.</a>
                         </li>
                     </ul>
                 </div>
@@ -94,11 +60,11 @@
             </div>
 
             <div class="flex flex-row gap-8">
-                <a href="/privacy" class="opacity-80 hover:opacity-100 hover:underline duration-150">
+                <a href="/" class="opacity-80 hover:opacity-100 hover:underline duration-150">
                     Privacy Policy
                 </a>
 
-                  <a href="/service" class="opacity-80 hover:opacity-100 hover:underline duration-150">
+                  <a href="/" class="opacity-80 hover:opacity-100 hover:underline duration-150">
                     Terms of Service
                 </a>
             </div>
@@ -110,7 +76,7 @@
         class="w-[400px]">
     </div>
 
-    <div class="absolute bottom-20 right-[-275px] opacity-50 z-[-1] hidden xl:flex">
+    <div class="absolute bottom-20 right-0 translate-x-[305px] opacity-50 z-[-1] hidden xl:flex">
         <img src="{{ asset('storage/images/backpack-shape.png') }}"  alt="backpack-tent"
         class="w-[350px]">
     </div>

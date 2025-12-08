@@ -17,7 +17,7 @@
 
     @livewireStyles
 </head>
-<body>
+<body class="overflow-x-hidden">
     @livewire("header")
 
     <main class='mx-auto'>

@@ -27,7 +27,7 @@ class GeneralController extends Controller
 
     public function gear()
     {
-        $product = Product::all();
+        $product = Product::with('category')->paginate(20);
         $total = Product::count();
 
         return view('gear', compact('product', 'total'));
@@ -49,6 +49,8 @@ class GeneralController extends Controller
     }
 
     public function admin(){
-        return view('admin.admin');
+        $products = Product::with('category')->paginate(20);
+
+        return view('admin.admin', compact('products'));
     }
 }

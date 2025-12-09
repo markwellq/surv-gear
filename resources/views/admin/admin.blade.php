@@ -24,7 +24,7 @@
     @endif
 
     <div class="flex flex-col items-center justify-center">
-        <div class="bg-white shadow-md p-6 flex flex-col items-center justify-center gap-4 max-w-md w-full">
+        <div class="bg-white p-6 flex flex-col items-center justify-center gap-4 max-w-md w-full">
             <h2 class="text-xl font-bold mb-4">Add Product</h2>
             <form action="{{ route('admin.store') }}" method="POST" enctype="multipart/form-data" class="flex flex-col gap-4">
                 @csrf
@@ -73,38 +73,35 @@
 
     </div>
 
-    <div class="mt-10 bg-white shadow-md p-6 overflow-x-auto flex flex-col items-center justify-center">
+    <div class="mt-10 bg-white p-6 flex flex-col items-center justify-center">
         <h2 class="text-xl font-bold mb-4">All products</h2>
-        <table class="w-full text-left border-collapse">
-            <thead>
-                <tr class="border-b">
-                    <th class="p-2">Name</th>
-                    <th class="p-2">Category</th>
-                    <th class="p-2">Price</th>
-                    <th class="p-2">Discount</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($products as $product)
-                <tr class="border-b">
-                    <td class="p-2">{{ $product->name }}</td>
-                    <td class="p-2">{{ $product->category->name ?? '-' }}</td>
-                    <td class="p-2">${{ $product->price }}</td>
-                    <td class="p-2">{{ $product->discount ? '1' : '0' }}</td>
-                    <td class="p-2">
-                        <form action="{{ route('admin.remove') }}" method="POST">
-                            @csrf
-                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                            <button class="bg-red-400 hover:bg-white hover:text-black cursor-pointer border-[0.1px] text-white py-1 px-3">
-                                Delete
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
+       <div class="w-full">
+            <div class="border-b font-semibold flex gap-4 p-2">
+                <div class="flex-1">Name</div>
+                <div class="flex-1">Category</div>
+                <div class="flex-1">Price</div>
+                <div class="flex-1">Discount</div>
+                <div class="w-24">Actions</div>
+            </div>
+            
+            @foreach ($products as $product)
+            <div class="border-b flex gap-4 p-2 items-center">
+                <div class="flex-1">{{ $product->name }}</div>
+                <div class="flex-1">{{ $product->category->name ?? '-' }}</div>
+                <div class="flex-1">${{ $product->price }}</div>
+                <div class="flex-1">{{ $product->discount ? '1' : '0' }}</div>
+                <div class="w-24">
+                    <form action="{{ route('admin.remove') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                        <button class="bg-red-400 hover:bg-white hover:text-black cursor-pointer border-[0.1px] text-white py-1 px-3">
+                            Delete
+                        </button>
+                    </form>
+                </div>
+            </div>
+            @endforeach
+        </div>
     </div>
 
 </div>

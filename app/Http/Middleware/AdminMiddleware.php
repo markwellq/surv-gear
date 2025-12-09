@@ -17,7 +17,7 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next): Response
     {   
         if(!Auth::check() || Auth::user()->role !== 'admin'){
-            abort(403, 'Access permissio denied');
+            abort(403, 'Access denied');
         }
 
         return $next($request);

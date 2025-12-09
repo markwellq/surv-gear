@@ -93,7 +93,14 @@
                            @auth
                            <div class="flex flex-col gap-4 justify-center items-center"> 
                               <a href="/profile" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] text-[24px]">My Account</a>
-                              <a href="/logout" class="text-(--text-white) cursor-pointer hover:border-b-[0.1px] hover:text-red-300 text-[24px]">Logout</a>
+                                <div class="mt-6 pt-6 border-t border-white">
+                                  <a href="/logout" class="flex items-center justify-center text-white hover:border-b-[0.1px] gap-2 py-2 transition duration-200">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                                    </svg>
+                                    Logout
+                                 </a>
+                        </div>
                            </div>
                            @endauth
                      </div>

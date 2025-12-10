@@ -1,14 +1,14 @@
 @extends('layout')
 @section('main')
     <div class="mx-auto container mb-60 mt-25 px-4">
-        <div class="flex flex-col-reverse lg:flex-row mx-auto items-center justify-center max-w-sm lg:max-w-4xl bg-white">
+        <div class="flex flex-col-reverse lg:flex-row mx-auto items-stretch justify-center max-w-sm lg:max-w-4xl bg-white">
 
             <div class="flex-1 hidden lg:flex justify-center">
                 <img src="{{ asset('storage/images/auth-img.jpg') }}" alt="auth-image"
-                 class="w-full object-cover h-[600px]">
+                 class="w-full object-cover">
             </div>
 
-            <div class="flex-1 flex-col items-center justify-center w-full max-w-sm p-4 gap-4">
+            <div class="flex-1 flex flex-col items-center justify-center w-full max-w-sm p-4 gap-4">
                 <div class="flex items-center justify-center mb-4">
                     <p class="text-[24px] font-bold">Login</p>
                 </div>

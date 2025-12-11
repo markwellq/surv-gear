@@ -61,7 +61,7 @@
             <div>
                 @livewire('add-to-cart', ['productId' => $product->id])
             </div>
-          </div
+        </div>
 
                  <div class="flex flex-col gap-2 ">
                     <p class="text-(--text-white)">{{ $product->description }}</p>

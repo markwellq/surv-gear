@@ -40,29 +40,14 @@
                     @endforeach
                 </select>
 
-                <input name="slug" type="text" placeholder="Slug"
-                       class="w-full p-3 border rounded-md">
-
-                <input name="price" type="number" placeholder="Price"
-                       class="w-full p-3 border rounded-md">
-
-                <input name="discount" type="number" placeholder="Discount (true or false)"
-                       class="w-full p-3 border rounded-md">
-
-                <input name="discount_price" type="number" placeholder="Discount Price"
-                       class="w-full p-3 border rounded-md">
-
-                <input name="short_desc" type="text" placeholder="Short description"
-                       class="w-full p-3 border rounded-md">
-
-                <input name="short_desc_2" type="text" placeholder="Short description 2"
-                       class="w-full p-3 border rounded-md">
-
-                <textarea name="description" placeholder="Main description"
-                          class="w-full p-3 border rounded-md"></textarea>
-
-                <input type="file" name="image"
-                       class="w-full p-2 border rounded-md">
+                <input name="slug" type="text" placeholder="Slug" class="w-full p-3 border rounded-md">
+                <input name="price" type="number" placeholder="Price" class="w-full p-3 border rounded-md">
+                <input name="discount" type="number" placeholder="Discount (true or false)" class="w-full p-3 border rounded-md">
+                <input name="discount_price" type="number" placeholder="Discount Price" class="w-full p-3 border rounded-md">
+                <input name="short_desc" type="text" placeholder="Short description" class="w-full p-3 border rounded-md">
+                <input name="short_desc_2" type="text" placeholder="Short description 2" class="w-full p-3 border rounded-md">
+                <textarea name="description" placeholder="Main description" class="w-full p-3 border rounded-md"></textarea>
+                <input type="file" name="image" class="w-full p-2 border rounded-md">
 
                 <button type="submit"
                         class="mt-2 cursor-pointer py-2 hover:border-b-[0.1px] px-6 border-black font-semibold">

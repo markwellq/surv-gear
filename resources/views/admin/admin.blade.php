@@ -61,7 +61,7 @@
     <div class="mt-10 bg-white p-6 flex flex-col items-center justify-center">
         <h2 class="text-xl font-bold mb-4">All products</h2>
        <div class="w-full">
-            <div class="border-b font-semibold flex gap-4 p-2">
+            <div class="hidden border-b font-semibold md:flex gap-4 p-2">
                 <div class="flex-1">Name</div>
                 <div class="flex-1">Category</div>
                 <div class="flex-1">Price</div>
@@ -69,23 +69,55 @@
                 <div class="w-24">Actions</div>
             </div>
             
+       <div>
             @foreach ($products as $product)
-            <div class="border-b flex gap-4 p-2 items-center">
-                <div class="flex-1">{{ $product->name }}</div>
-                <div class="flex-1">{{ $product->category->name ?? '-' }}</div>
-                <div class="flex-1">${{ $product->price }}</div>
-                <div class="flex-1">{{ $product->discount ? '1' : '0' }}</div>
-                <div class="w-24">
-                    <form action="{{ route('admin.remove') }}" method="POST">
-                        @csrf
-                        <input type="hidden" name="product_id" value="{{ $product->id }}">
-                        <button class="bg-red-400 hover:bg-white hover:text-black cursor-pointer border-[0.1px] text-white py-1 px-3">
-                            Delete
-                        </button>
-                    </form>
+            <div class="border-b p-2">
+                <div class="flex flex-col gap-2 md:hidden">
+                    <div class="flex justify-between">
+                        <span class="font-semibold">Name:</span>
+                        <span>{{ $product->name }}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-semibold">Category:</span>
+                        <span>{{ $product->category->name ?? '-' }}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-semibold">Price:</span>
+                        <span>${{ $product->price }}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-semibold">Discount:</span>
+                        <span>{{ $product->discount ? '1' : '0' }}</span>
+                    </div>
+                    <div class="mt-2">
+                        <form action="{{ route('admin.remove') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{ $product->id }}">
+                            <button class="w-full bg-red-400 hover:bg-white hover:text-black cursor-pointer border-[0.1px] text-white py-1 px-3">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="hidden md:flex md:flex-row gap-4 items-center justify-center">
+                    <div class="flex-1">{{ $product->name }}</div>
+                    <div class="flex-1">{{ $product->category->name ?? '-' }}</div>
+                    <div class="flex-1">${{ $product->price }}</div>
+                    <div class="flex-1">{{ $product->discount ? '1' : '0' }}</div>
+                    <div class="w-24">
+                        <form action="{{ route('admin.remove') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{ $product->id }}">
+                            <button class="bg-red-400 hover:bg-white hover:text-black cursor-pointer border-[0.1px] text-white py-1 px-3">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
             @endforeach
+            </div>
         </div>
     </div>
 

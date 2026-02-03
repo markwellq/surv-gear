@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="320" alt="Laravel Logo">
-</p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<h1 align="center">Surv Gear Platform</h1>
+&nbsp;&nbsp;...New Version...&nbsp;&nbsp;
+
+<<<<<<< Updated upstream
 
 <p align="center">
   Modern Laravel fullstack project • Portfolio showcase • Dockerized environment
@@ -11,9 +11,8 @@
 ## UI Preview
 
 <p align="center">
-  <img src="public/images/design.png" width="900">
+  <img src="storage/app/public/images/design.png" width="900" alt='Preview'>
 </p>
-
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-Framework-red" />
@@ -33,7 +32,6 @@ and are used for **demonstration and educational purposes only**, not for commer
 If you are a rights holder and want any content removed, please contact me.
 
 ---
-
 
 &nbsp; - docker-compose up -d --build
 

@@ -29,6 +29,8 @@ If you are a rights holder and want any content removed, please contact me.
 
 ---
 
+## Commands, mysql, other
+
 &nbsp; - docker-compose up -d --build
 
 &nbsp; - docker exec -it surv_gear_system bash

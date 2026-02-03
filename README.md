@@ -1,8 +1,39 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-&nbsp;&nbsp; Practice
-&nbsp;&nbsp; **Figma : https://www.figma.com/site/roHIejwgv0T6kZpUtdDPcj/Surv-gear?node-id=0-1&t=V3HCcQYyGNlORGYP-1** &nbsp;&nbsp;
+<p align="center">
+  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="320" alt="Laravel Logo">
+</p>
 
-&nbsp;&nbsp;&nbsp;
+<h1 align="center">Surv Gear Platform</h1>
+
+<p align="center">
+  Modern Laravel fullstack project • Portfolio showcase • Dockerized environment
+</p>
+
+## UI Preview
+
+<p align="center">
+  <img src="public/images/design.png" width="900">
+</p>
+
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-Framework-red" />
+  <img src="https://img.shields.io/badge/Docker-Environment-blue" />
+  <img src="https://img.shields.io/badge/Status-Portfolio-success" />
+</p>
+
+---
+
+## ⚠️ Disclaimer
+
+This project was created for **portfolio/CV purposes only**.
+
+All images, icons, and design resources used in this project belong to their respective owners  
+and are used for **demonstration and educational purposes only**, not for commercial use.
+
+If you are a rights holder and want any content removed, please contact me.
+
+---
+
 
 &nbsp; - docker-compose up -d --build
 

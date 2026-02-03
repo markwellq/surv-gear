@@ -11,7 +11,7 @@
 ## UI Preview
 
 <p align="center">
-  <img src="storage/app/public/images/design.png" width="900" alt='Preview'>
+  <img src="public/design.png" width="900" alt="Preview">
 </p>
 
 <p align="center">
